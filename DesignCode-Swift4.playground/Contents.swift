@@ -63,4 +63,54 @@ class UserClass {
     }
 }
 
+var userA = UserClass(name: "Mykhailo", age: 32, job: "Engeneer")
+var userB = userA
+userB.name = "Michail"
+userA.name
 
+var userC = UserStruct(name: "Mykhailo", age: 32, job: "Engeneer")
+var userD = userA
+userD.name = "Michail"
+userC.name
+
+// My comment
+/* This is a comment
+ written over multiple lines */
+
+//: # Heading
+//: ## Second level heading
+//: ### Third level heading
+
+//: Markdown text
+
+/*:
+ Markdown text over multiple lines.
+ */
+
+//: Learn Swift 4 [Design+Code and Swiftbook]
+
+//: Logo: ![Image](Logo.jpg)
+
+// MARK: Section
+
+/*
+ name
+ userName
+ changeColor()
+ ViewController
+ UserProfile
+ Comment
+ 
+ var u = UserProfile() <-- Don't do that
+ */
+
+var answer: String?
+UILabel().text = answer
+
+var answerString: String!
+
+if let sureAnswer = answer {
+    UILabel().text = sureAnswer
+}
+
+UILabel().text = answer ?? ""

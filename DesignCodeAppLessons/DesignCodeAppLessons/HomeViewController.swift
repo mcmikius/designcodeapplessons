@@ -16,9 +16,15 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
     @IBOutlet weak var playVisualEffectView: UIVisualEffectView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var heroView: UIView!
+    @IBOutlet weak var bookView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.delegate = self
         
         titleLabel.alpha = 0
         deviceImageView.alpha = 0
@@ -43,8 +49,5 @@ class HomeViewController: UIViewController {
             player.play()
         }
     }
-    
-
-
 }
 

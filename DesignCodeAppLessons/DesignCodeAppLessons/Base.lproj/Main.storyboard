@@ -21,11 +21,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-BW-cd5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAs-AK-d1u" userLabel="Hero View">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAs-AK-d1u" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="6SR-UW-KWw">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                                <rect key="frame" x="0.0" y="-50" width="375" height="502"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to design &amp; code for iOS 11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-5V-nm7">
                                                 <rect key="frame" x="37.666666666666657" y="106" width="160" height="172"/>
@@ -237,7 +237,7 @@
                                             <constraint firstAttribute="trailing" secondItem="T1p-pr-BMH" secondAttribute="trailing" id="asg-fp-Y7R"/>
                                             <constraint firstItem="6SR-UW-KWw" firstAttribute="leading" secondItem="pAs-AK-d1u" secondAttribute="leading" id="dnQ-52-7UV"/>
                                             <constraint firstItem="giQ-RA-wdh" firstAttribute="leading" secondItem="JNa-5V-nm7" secondAttribute="trailing" constant="4" id="iu9-v5-0vx"/>
-                                            <constraint firstItem="6SR-UW-KWw" firstAttribute="top" secondItem="pAs-AK-d1u" secondAttribute="top" id="oWp-Q8-bVF"/>
+                                            <constraint firstItem="6SR-UW-KWw" firstAttribute="top" secondItem="pAs-AK-d1u" secondAttribute="top" constant="-50" id="oWp-Q8-bVF"/>
                                             <constraint firstAttribute="height" constant="452" id="pse-B3-LE3"/>
                                             <constraint firstItem="JNa-5V-nm7" firstAttribute="centerY" secondItem="pAs-AK-d1u" secondAttribute="centerY" constant="-34" id="rnm-R6-yuq"/>
                                         </constraints>
@@ -344,8 +344,12 @@
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="6SR-UW-KWw" id="lBX-GO-W6M"/>
+                        <outlet property="bookView" destination="dB9-IG-IoD" id="FFM-l7-Wec"/>
                         <outlet property="deviceImageView" destination="giQ-RA-wdh" id="fdE-ui-11t"/>
+                        <outlet property="heroView" destination="pAs-AK-d1u" id="Nja-l0-IM4"/>
                         <outlet property="playVisualEffectView" destination="JWH-fY-9SH" id="Ptl-Mp-EVW"/>
+                        <outlet property="scrollView" destination="EJv-BW-cd5" id="PRO-LT-d62"/>
                         <outlet property="titleLabel" destination="JNa-5V-nm7" id="caO-Gf-81x"/>
                     </connections>
                 </viewController>
@@ -366,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKQ-9c-eHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-62"/>
+            <point key="canvasLocation" x="1609" y="-84"/>
         </scene>
     </scenes>
     <resources>

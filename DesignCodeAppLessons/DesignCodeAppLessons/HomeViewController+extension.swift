@@ -33,17 +33,16 @@ extension HomeViewController: UIScrollViewDelegate {
         let offsetY = scrollView.contentOffset.y
         if offsetY < 0 {
             heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
-            playVisualEffectView.transform = CGAffineTransform(translationX: 0, y: -offsetY / 3)
-            titleLabel.transform = CGAffineTransform(translationX: 0, y: -offsetY / 3)
-            deviceImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY / 4)
-            backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY / 5)
+            playVisualEffectView.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
+            titleLabel.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
+            deviceImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/4)
+            backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
         }
         if let collectionView = scrollView as? UICollectionView {
             for cell in collectionView.visibleCells as! [SectionCollectionViewCell] {
                 let indexPath = collectionView.indexPath(for: cell)!
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
-                
                 let translationX = cellFrame.origin.x / 5
                 cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
                
@@ -57,7 +56,7 @@ extension HomeViewController: UIScrollViewDelegate {
         let angleFromX = Double((-cellFrame.origin.x) / 10)
         let angle = CGFloat((angleFromX * Double.pi) / 180.0)
         var transform = CATransform3DIdentity
-        transform.m34 = -1.0 / 1000
+        transform.m34 = -1.0/1000
         let rotation = CATransform3DRotate(transform, angle, 0, 1, 0)
         
         var scaleFromX = (1000 - (cellFrame.origin.x - 200)) / 1000

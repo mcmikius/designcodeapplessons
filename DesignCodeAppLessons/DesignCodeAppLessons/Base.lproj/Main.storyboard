@@ -310,7 +310,7 @@
                                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="Q3d-jC-ZDi">
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionCollectionViewCell" id="Q3d-jC-ZDi" customClass="SectionCollectionViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -390,6 +390,11 @@
                                                             <constraint firstAttribute="trailing" secondItem="x8U-EA-n1T" secondAttribute="trailing" id="g3U-7i-Dgi"/>
                                                         </constraints>
                                                         <size key="customSize" width="304" height="248"/>
+                                                        <connections>
+                                                            <outlet property="captionLabel" destination="0LJ-E5-6wz" id="euc-g6-X2r"/>
+                                                            <outlet property="coverImageView" destination="ons-hm-vU7" id="bNX-jY-xvc"/>
+                                                            <outlet property="titleLabel" destination="ysv-SY-mJu" id="9jb-93-S63"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>

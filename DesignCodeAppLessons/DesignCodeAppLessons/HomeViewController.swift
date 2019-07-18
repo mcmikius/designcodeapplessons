@@ -20,11 +20,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var heroView: UIView!
     @IBOutlet weak var bookView: UIView!
+    @IBOutlet weak var chapterCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.delegate = self
+        chapterCollectionView.delegate = self
+        chapterCollectionView.dataSource = self
         
         titleLabel.alpha = 0
         deviceImageView.alpha = 0

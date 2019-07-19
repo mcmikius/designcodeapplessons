@@ -323,7 +323,7 @@
                                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-Yv-yQL">
                                                                             <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
                                                                             <subviews>
-                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="ons-hm-vU7">
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios11" translatesAutoresizingMaskIntoConstraints="NO" id="ons-hm-vU7">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="304" height="248"/>
                                                                                 </imageView>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn iOS 11 Design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysv-SY-mJu">
@@ -497,7 +497,7 @@
                                             <constraint firstAttribute="height" constant="235" id="rSn-sP-xha"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="e3h-QO-oAX">
-                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="itemSize" width="304" height="235"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -676,6 +676,7 @@
                             <constraint firstItem="7qg-pB-Pgv" firstAttribute="top" secondItem="svf-LX-N1H" secondAttribute="top" id="D53-DI-Kjd"/>
                             <constraint firstAttribute="trailing" secondItem="7qg-pB-Pgv" secondAttribute="trailing" id="Y3q-kV-AMy"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="NMt-bA-hOG"/>
                     </view>
                     <connections>
                         <outlet property="testimonialCollectionView" destination="kgZ-p1-SMz" id="ZDT-S0-XmE"/>

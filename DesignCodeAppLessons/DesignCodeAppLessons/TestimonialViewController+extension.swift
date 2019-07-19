@@ -15,7 +15,9 @@ extension TestimonialViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TestimonialCollectionViewCell", for: indexPath) as! TestimonialCollectionViewCell
+        
         let testimonial = testimonials[indexPath.row]
         cell.textLabel.text = testimonial["text"]
         cell.nameLabel.text = testimonial["name"]

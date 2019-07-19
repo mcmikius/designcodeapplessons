@@ -1,16 +1,15 @@
 //
-//  HomeViewController+extension.swift
+//  ChaptersViewController+extension.swift
 //  DesignCodeAppLessons
 //
-//  Created by Mykhailo Bondarenko on 7/18/19.
+//  Created by Mykhailo Bondarenko on 7/19/19.
 //  Copyright © 2019 Mykhailo Bondarenko. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
+extension ChaptersViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
@@ -25,30 +24,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "HomeToSection", sender: indexPath)
-    }
-    
     
 }
 
-extension HomeViewController: UIScrollViewDelegate {
-    
-    
-    
+extension ChaptersViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y
-        
-        let navigationIsHidden = offsetY <= 0
-        navigationController?.setNavigationBarHidden(navigationIsHidden, animated: true)
-        
-        if offsetY < 0 {
-            heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
-            playVisualEffectView.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
-            titleLabel.transform = CGAffineTransform(translationX: 0, y: -offsetY/3)
-            deviceImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/4)
-            backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
-        }
         if let collectionView = scrollView as? UICollectionView {
             for cell in collectionView.visibleCells as! [SectionCollectionViewCell] {
                 let indexPath = collectionView.indexPath(for: cell)!
@@ -56,7 +36,7 @@ extension HomeViewController: UIScrollViewDelegate {
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
                 let translationX = cellFrame.origin.x / 5
                 cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
-               
+                
                 cell.layer.transform = animateCell(cellFrame: cellFrame)
             }
         }

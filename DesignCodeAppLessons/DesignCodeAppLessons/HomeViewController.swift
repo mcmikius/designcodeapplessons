@@ -64,7 +64,7 @@ class HomeViewController: UIViewController {
     }
     
     func setStatusBarBackgroundColor(color: UIColor) {
-        guard let statusBar = UIApplication.shared.value(forKey: "statusBarWindow.statusBar") as? UIView else { return }
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
         statusBar.backgroundColor = color
     }
     
@@ -81,6 +81,7 @@ class HomeViewController: UIViewController {
             let section = sections[indexPath.row]
             sectionViewController.section = section
             sectionViewController.sections = sections
+            sectionViewController.indexPath = indexPath
             
             isStatusBarHidden = true
             UIView.animate(withDuration: 0.5) {

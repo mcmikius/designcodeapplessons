@@ -38,10 +38,16 @@ class HomeViewController: UIViewController {
             self.deviceImageView.alpha = 1
             self.playVisualEffectView.alpha = 1
         }
+        
+        addBlurStatusBar()
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+    func addBlurStatusBar() {
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
+        blurStatusBar.effect = blurEffect
+        view.addSubview(blurStatusBar)
     }
     
     // MARK: - Navigation

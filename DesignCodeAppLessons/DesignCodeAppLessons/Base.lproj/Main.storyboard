@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="EJv-BW-cd5">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1887"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAs-AK-d1u" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
@@ -444,7 +444,7 @@
                             <constraint firstAttribute="bottom" secondItem="EJv-BW-cd5" secondAttribute="bottom" id="GkK-dy-HC5"/>
                             <constraint firstItem="EJv-BW-cd5" firstAttribute="leading" secondItem="UyI-6T-yc8" secondAttribute="leading" id="OMR-NK-45t"/>
                             <constraint firstAttribute="trailing" secondItem="EJv-BW-cd5" secondAttribute="trailing" id="VEt-zT-h3M"/>
-                            <constraint firstItem="EJv-BW-cd5" firstAttribute="top" secondItem="Omz-aL-WxF" secondAttribute="top" id="iGk-a5-E9j"/>
+                            <constraint firstItem="EJv-BW-cd5" firstAttribute="top" secondItem="UyI-6T-yc8" secondAttribute="top" id="iGk-a5-E9j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Omz-aL-WxF"/>
                     </view>
@@ -1060,6 +1060,7 @@
                             <constraint firstItem="n4C-CQ-pVY" firstAttribute="top" secondItem="oHc-Ic-4XP" secondAttribute="top" constant="20" id="yLZ-e8-kbh"/>
                             <constraint firstAttribute="trailing" secondItem="n4C-CQ-pVY" secondAttribute="trailing" id="zuN-Cl-6Bv"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="K5v-KS-uvH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="Tab Bar/more" selectedImage="Tab Bar/more-active" id="nma-7V-jjr"/>
                     <size key="freeformSize" width="375" height="800"/>
@@ -1281,6 +1282,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vxZ-nm-les" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bEf-2k-Auh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -34,6 +34,10 @@ class SectionViewController: UIViewController {
         progressLabel.text = "\(indexPath.row + 1) / \(sections.count)"
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -22,6 +22,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var bookView: UIView!
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
+    // MARK: - Properties
+    
+    var isStatusBarHidden = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,15 +43,33 @@ class HomeViewController: UIViewController {
             self.playVisualEffectView.alpha = 1
         }
         
-        addBlurStatusBar()
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        
     }
     
-    func addBlurStatusBar() {
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
-        blurStatusBar.effect = blurEffect
-        view.addSubview(blurStatusBar)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        isStatusBarHidden = false
+        UIView.animate(withDuration: 0.5) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBar = UIApplication.shared.value(forKey: "statusBarWindow.statusBar") as? UIView else { return }
+        statusBar.backgroundColor = color
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - Navigation
@@ -59,6 +81,11 @@ class HomeViewController: UIViewController {
             let section = sections[indexPath.row]
             sectionViewController.section = section
             sectionViewController.sections = sections
+            
+            isStatusBarHidden = true
+            UIView.animate(withDuration: 0.5) {
+                self.setNeedsStatusBarAppearanceUpdate()
+            }
         }
     }
     

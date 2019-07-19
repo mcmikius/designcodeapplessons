@@ -40,6 +40,18 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeToSection" {
+            let sectionViewController = segue.destination as! SectionViewController
+            let indexPath = sender as! IndexPath
+            let section = sections[indexPath.row]
+            sectionViewController.section = section
+            sectionViewController.sections = sections
+        }
+    }
+    
     // MARK: - IBActiona
     
     @IBAction func playVideo(_ sender: UIButton) {

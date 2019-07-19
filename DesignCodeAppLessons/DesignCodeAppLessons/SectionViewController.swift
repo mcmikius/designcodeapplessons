@@ -10,10 +10,28 @@ import UIKit
 
 class SectionViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var progressLabel: UILabel!
+    @IBOutlet weak var bodyLabel: UILabel!
+    
+    // MARK: - Properties
+    
+    var section: [String: String]!
+    var sections: [[String: String]]!
+    var indexPath: IndexPath!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLabel.text = section["title"]
+        captionLabel.text = section["caption"]
+        bodyLabel.text = section["body"]
+        coverImageView.image = UIImage(named: section["image"]!)
+        progressLabel.text = "\(indexPath.row + 1) / \(sections.count)"
     }
     
 
@@ -26,5 +44,10 @@ class SectionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    // MARK: - IBActions
+    
+    @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

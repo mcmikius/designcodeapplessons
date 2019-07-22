@@ -19,6 +19,7 @@
 		F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587222E5924C0002B8C1 /* WebViewController.swift */; };
 		F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587422E59B3C0002B8C1 /* MoreViewController.swift */; };
 		F333587822E5B8C00002B8C1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333587722E5B8C00002B8C1 /* WebKit.framework */; };
+		F333587A22E5C8D10002B8C1 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */; };
 		F3B72FFA22E2611D00D46BA3 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */; };
 		F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */; };
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		F333587222E5924C0002B8C1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F333587422E59B3C0002B8C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F333587722E5B8C00002B8C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
 		F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaptersViewController+extension.swift"; sourceTree = "<group>"; };
 		F3DF2A1722DF0FB90025684E /* DesignCodeAppLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */,
 				F333587222E5924C0002B8C1 /* WebViewController.swift */,
 				F333587422E59B3C0002B8C1 /* MoreViewController.swift */,
+				F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 				F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */,
 				F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */,
 				F3019C8D22E06C3C0043F30E /* HomeViewController+extension.swift in Sources */,
+				F333587A22E5C8D10002B8C1 /* UIViewController+extension.swift in Sources */,
 				F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */,
 				F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */,
 			);

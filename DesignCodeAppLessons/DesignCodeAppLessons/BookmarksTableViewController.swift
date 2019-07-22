@@ -47,6 +47,10 @@ class BookmarksTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "BookmarksToSection", sender: indexPath)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -83,14 +87,15 @@ class BookmarksTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "BookmarksToSection", let sectionViewController = segue.destination as? SectionViewController {
+            sectionViewController.section = sections[0]
+            sectionViewController.sections = sections
+            sectionViewController.indexPath = sender as! IndexPath
+        }
     }
-    */
 
 }

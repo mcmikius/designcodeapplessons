@@ -16,15 +16,7 @@ class MoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier, identifier == "MoreToWeb" {
-            let navigationController = segue.destination as! UINavigationController
-            let webViewController = navigationController.viewControllers.first as! WebViewController
-            webViewController.urlString = sender as? String
-        }
-    }
+    
     
     // MARK: - IBActions
     
@@ -36,6 +28,22 @@ class MoreViewController: UIViewController {
     }
     @IBAction func showTwitter(_ sender: UIButton) {
         performSegue(withIdentifier: "MoreToWeb", sender: "https://twitter.com/mengto")
+    }
+    @IBAction func sendEmail(_ sender: UIButton) {
+        let email = "meng@designcode.io"
+        if let url = URL(string: "mailto:\(email)") {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "MoreToWeb" {
+            let navigationController = segue.destination as! UINavigationController
+            let webViewController = navigationController.viewControllers.first as! WebViewController
+            webViewController.urlString = sender as? String
+        }
     }
     
 

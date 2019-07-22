@@ -1049,6 +1049,9 @@
                                                                 <state key="normal" title="Email Support" image="More/email">
                                                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="sendEmail:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="vrK-Iq-JKN"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAQ-D9-b3W">
                                                                 <rect key="frame" x="0.0" y="301" width="335" height="59"/>
@@ -1522,7 +1525,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="cmq-hv-0pk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Din-fv-3TT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

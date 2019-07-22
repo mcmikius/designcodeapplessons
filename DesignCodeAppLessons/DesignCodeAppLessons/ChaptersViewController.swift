@@ -13,6 +13,7 @@ class ChaptersViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBOutlet weak var chapterOneCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

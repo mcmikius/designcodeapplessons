@@ -558,38 +558,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </visualEffectView>
-                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-Ya-Q98">
-                                                <rect key="frame" x="319" y="20" width="36" height="36"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rlh-is-cmY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeg-Dr-l3x">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                            <state key="normal" image="Action-Close"/>
-                                                            <connections>
-                                                                <segue destination="tlL-x1-Wbb" kind="unwind" unwindAction="unwindToViewController:" id="oC5-SH-q9p"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="aeg-Dr-l3x" firstAttribute="leading" secondItem="Rlh-is-cmY" secondAttribute="leading" id="47v-4W-P1g"/>
-                                                        <constraint firstItem="aeg-Dr-l3x" firstAttribute="top" secondItem="Rlh-is-cmY" secondAttribute="top" id="JFD-xw-0zp"/>
-                                                        <constraint firstAttribute="bottom" secondItem="aeg-Dr-l3x" secondAttribute="bottom" id="dTM-Tx-YdC"/>
-                                                        <constraint firstAttribute="trailing" secondItem="aeg-Dr-l3x" secondAttribute="trailing" id="m09-7a-ClU"/>
-                                                    </constraints>
-                                                </view>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="36" id="Hz0-aJ-oEQ"/>
-                                                    <constraint firstAttribute="width" constant="36" id="cFF-W7-VEz"/>
-                                                </constraints>
-                                                <blurEffect style="dark"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="12"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -598,14 +566,12 @@
                                             <constraint firstItem="gPJ-yR-Y0F" firstAttribute="top" secondItem="JVk-rK-z1V" secondAttribute="top" constant="20" id="COZ-GA-RFA"/>
                                             <constraint firstItem="gPJ-yR-Y0F" firstAttribute="leading" secondItem="Hbj-8C-O9b" secondAttribute="leading" constant="20" id="Hd8-FP-4MP"/>
                                             <constraint firstItem="zIq-iz-vuI" firstAttribute="top" secondItem="JVk-rK-z1V" secondAttribute="top" constant="66" id="SVz-8m-Rqj"/>
-                                            <constraint firstItem="SUY-Ya-Q98" firstAttribute="top" secondItem="JVk-rK-z1V" secondAttribute="top" constant="20" id="bSD-0k-xln"/>
                                             <constraint firstItem="lq7-g1-gVl" firstAttribute="leading" secondItem="JVk-rK-z1V" secondAttribute="leading" id="dgL-2K-GNG"/>
                                             <constraint firstItem="lq7-g1-gVl" firstAttribute="top" secondItem="JVk-rK-z1V" secondAttribute="top" id="f3c-ik-H63"/>
-                                            <constraint firstAttribute="height" constant="420" id="hMK-g1-dPC"/>
+                                            <constraint firstAttribute="height" priority="999" constant="420" id="hMK-g1-dPC"/>
                                             <constraint firstAttribute="bottom" secondItem="lq7-g1-gVl" secondAttribute="bottom" id="jTa-5n-eNA"/>
                                             <constraint firstItem="yOK-Di-Ktt" firstAttribute="leading" secondItem="Hbj-8C-O9b" secondAttribute="leading" constant="20" id="mdB-Fi-cPo"/>
                                             <constraint firstAttribute="bottom" secondItem="yOK-Di-Ktt" secondAttribute="bottom" constant="30" id="wtv-Wd-Yx7"/>
-                                            <constraint firstAttribute="trailing" secondItem="SUY-Ya-Q98" secondAttribute="trailing" constant="20" id="zdr-kY-kLD"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="Hbj-8C-O9b"/>
                                     </view>
@@ -616,8 +582,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="JVk-rK-z1V" secondAttribute="bottom" constant="500" id="0cn-A1-EUa"/>
+                                    <constraint firstAttribute="bottom" secondItem="JVk-rK-z1V" secondAttribute="bottom" priority="999" constant="500" id="0cn-A1-EUa"/>
                                     <constraint firstItem="sMw-XM-We7" firstAttribute="leading" secondItem="QcO-Ye-Lzb" secondAttribute="leading" constant="20" id="8Ok-QC-aLU"/>
                                     <constraint firstItem="sMw-XM-We7" firstAttribute="top" secondItem="JVk-rK-z1V" secondAttribute="bottom" constant="30" id="Apw-Xz-iNT"/>
                                     <constraint firstAttribute="trailing" secondItem="JVk-rK-z1V" secondAttribute="trailing" id="Mme-0Z-DSi"/>
@@ -628,21 +595,58 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="QcO-Ye-Lzb"/>
                             </scrollView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-Ya-Q98">
+                                <rect key="frame" x="319" y="20" width="36" height="36"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rlh-is-cmY">
+                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeg-Dr-l3x">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <state key="normal" image="Action-Close"/>
+                                            <connections>
+                                                <segue destination="tlL-x1-Wbb" kind="unwind" unwindAction="unwindToViewController:" id="oC5-SH-q9p"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aeg-Dr-l3x" firstAttribute="leading" secondItem="Rlh-is-cmY" secondAttribute="leading" id="47v-4W-P1g"/>
+                                        <constraint firstItem="aeg-Dr-l3x" firstAttribute="top" secondItem="Rlh-is-cmY" secondAttribute="top" id="JFD-xw-0zp"/>
+                                        <constraint firstAttribute="bottom" secondItem="aeg-Dr-l3x" secondAttribute="bottom" id="dTM-Tx-YdC"/>
+                                        <constraint firstAttribute="trailing" secondItem="aeg-Dr-l3x" secondAttribute="trailing" id="m09-7a-ClU"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Hz0-aJ-oEQ"/>
+                                    <constraint firstAttribute="width" constant="36" id="cFF-W7-VEz"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="fsy-pp-DPc" secondAttribute="bottom" id="RqD-L0-mI4"/>
+                            <constraint firstItem="EJR-Ao-pCo" firstAttribute="trailing" secondItem="SUY-Ya-Q98" secondAttribute="trailing" constant="20" id="JjL-Hg-XVV"/>
+                            <constraint firstAttribute="bottom" secondItem="fsy-pp-DPc" secondAttribute="bottom" priority="999" id="RqD-L0-mI4"/>
                             <constraint firstItem="fsy-pp-DPc" firstAttribute="top" secondItem="TLJ-om-PZM" secondAttribute="top" id="XC3-OJ-cUL"/>
                             <constraint firstItem="fsy-pp-DPc" firstAttribute="leading" secondItem="TLJ-om-PZM" secondAttribute="leading" id="a0f-Np-wQc"/>
-                            <constraint firstAttribute="trailing" secondItem="fsy-pp-DPc" secondAttribute="trailing" id="hu9-ty-snu"/>
+                            <constraint firstAttribute="trailing" secondItem="fsy-pp-DPc" secondAttribute="trailing" priority="999" id="hu9-ty-snu"/>
+                            <constraint firstItem="SUY-Ya-Q98" firstAttribute="top" secondItem="TLJ-om-PZM" secondAttribute="top" constant="20" id="ntK-XD-Hlh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EJR-Ao-pCo"/>
                     </view>
                     <connections>
                         <outlet property="bodyLabel" destination="sMw-XM-We7" id="CW2-Fq-sxG"/>
                         <outlet property="captionLabel" destination="yOK-Di-Ktt" id="VEJ-R5-LdK"/>
+                        <outlet property="closeVisualEffectView" destination="SUY-Ya-Q98" id="Dsp-J3-Icm"/>
                         <outlet property="coverImageView" destination="lq7-g1-gVl" id="A3N-pX-BZk"/>
+                        <outlet property="coverView" destination="JVk-rK-z1V" id="dhu-Ez-fHS"/>
                         <outlet property="progressLabel" destination="Pig-Zt-mhe" id="mAi-PB-2f9"/>
+                        <outlet property="scrollView" destination="fsy-pp-DPc" id="oL0-DV-Pbj"/>
+                        <outlet property="subheadVisualEffectView" destination="gPJ-yR-Y0F" id="PXr-cS-3Tl"/>
                         <outlet property="titleLabel" destination="zIq-iz-vuI" id="gR0-4Y-hnJ"/>
                     </connections>
                 </viewController>

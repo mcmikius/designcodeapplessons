@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     
     var isStatusBarHidden = false
+    let presentSectionViewController = PresentSectionViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,12 +79,19 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {
-            let sectionViewController = segue.destination as! SectionViewController
+            let destinationViewController = segue.destination as! SectionViewController
             let indexPath = sender as! IndexPath
             let section = sections[indexPath.row]
-            sectionViewController.section = section
-            sectionViewController.sections = sections
-            sectionViewController.indexPath = indexPath
+            destinationViewController.section = section
+            destinationViewController.sections = sections
+            destinationViewController.indexPath = indexPath
+            destinationViewController.transitioningDelegate = self
+            
+            let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)!
+            let cellFrame = chapterCollectionView.convert(attributes.frame, to: view)
+            
+            presentSectionViewController.cellFrame = cellFrame
+            presentSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
             
             isStatusBarHidden = true
             UIView.animate(withDuration: 0.5) {

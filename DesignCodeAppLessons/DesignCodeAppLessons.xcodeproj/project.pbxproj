@@ -16,6 +16,7 @@
 		F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */; };
 		F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */; };
 		F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */; };
+		F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */; };
 		F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587222E5924C0002B8C1 /* WebViewController.swift */; };
 		F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587422E59B3C0002B8C1 /* MoreViewController.swift */; };
 		F333587822E5B8C00002B8C1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333587722E5B8C00002B8C1 /* WebKit.framework */; };
@@ -40,6 +41,7 @@
 		F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestimonialViewController+extension.swift"; sourceTree = "<group>"; };
 		F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
 		F333587222E5924C0002B8C1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F333587422E59B3C0002B8C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F333587722E5B8C00002B8C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 				F333587222E5924C0002B8C1 /* WebViewController.swift */,
 				F333587422E59B3C0002B8C1 /* MoreViewController.swift */,
 				F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */,
+				F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
@@ -200,6 +203,7 @@
 				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
 				F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */,
+				F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */,
 				F3DF2A2322DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld in Sources */,
 				F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */,
 				F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */,

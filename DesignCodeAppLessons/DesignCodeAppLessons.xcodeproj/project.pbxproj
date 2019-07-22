@@ -15,6 +15,7 @@
 		F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9422E0D30D0043F30E /* TestimonialCollectionViewCell.swift */; };
 		F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */; };
 		F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */; };
+		F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */; };
 		F3B72FFA22E2611D00D46BA3 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */; };
 		F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */; };
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		F3019C9422E0D30D0043F30E /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestimonialViewController+extension.swift"; sourceTree = "<group>"; };
 		F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaptersViewController+extension.swift"; sourceTree = "<group>"; };
 		F3DF2A1722DF0FB90025684E /* DesignCodeAppLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 				F3019C9422E0D30D0043F30E /* TestimonialCollectionViewCell.swift */,
 				F3019C9022E08DBE0043F30E /* SectionCollectionViewCell.swift */,
 				F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */,
+				F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
@@ -179,6 +182,7 @@
 				F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */,
 				F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */,
 				F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */,
+				F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */,
 				F3019C8D22E06C3C0043F30E /* HomeViewController+extension.swift in Sources */,
 				F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */,
 			);

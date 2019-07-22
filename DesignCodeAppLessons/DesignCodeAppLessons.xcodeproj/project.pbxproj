@@ -16,6 +16,8 @@
 		F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */; };
 		F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */; };
 		F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */; };
+		F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587222E5924C0002B8C1 /* WebViewController.swift */; };
+		F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587422E59B3C0002B8C1 /* MoreViewController.swift */; };
 		F3B72FFA22E2611D00D46BA3 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */; };
 		F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */; };
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 		F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestimonialViewController+extension.swift"; sourceTree = "<group>"; };
 		F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		F333587222E5924C0002B8C1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F333587422E59B3C0002B8C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaptersViewController+extension.swift"; sourceTree = "<group>"; };
 		F3DF2A1722DF0FB90025684E /* DesignCodeAppLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +94,8 @@
 				F3019C9022E08DBE0043F30E /* SectionCollectionViewCell.swift */,
 				F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */,
 				F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */,
+				F333587222E5924C0002B8C1 /* WebViewController.swift */,
+				F333587422E59B3C0002B8C1 /* MoreViewController.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
@@ -176,6 +182,7 @@
 				F3019C9122E08DBE0043F30E /* SectionCollectionViewCell.swift in Sources */,
 				F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */,
 				F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */,
+				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
 				F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */,
 				F3DF2A2322DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld in Sources */,
@@ -184,6 +191,7 @@
 				F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */,
 				F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */,
 				F3019C8D22E06C3C0043F30E /* HomeViewController+extension.swift in Sources */,
+				F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */,
 				F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

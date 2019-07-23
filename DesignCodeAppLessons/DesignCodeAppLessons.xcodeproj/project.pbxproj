@@ -29,6 +29,7 @@
 		F39CF52022E7513D00B0B95C /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */; };
 		F3B72FFA22E2611D00D46BA3 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */; };
 		F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */; };
+		F3C4F2D122E75C040039D352 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4F2D022E75C040039D352 /* LoginViewController.swift */; };
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
 		F3DF2A1D22DF0FB90025684E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */; };
 		F3DF2A2022DF0FB90025684E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DF2A1E22DF0FB90025684E /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 		F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaptersViewController+extension.swift"; sourceTree = "<group>"; };
+		F3C4F2D022E75C040039D352 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3DF2A1722DF0FB90025684E /* DesignCodeAppLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				F35A16C522E64C280093E879 /* PurchaseViewController.swift */,
 				F39CF51D22E7502500B0B95C /* DiscountViewController.swift */,
 				F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */,
+				F3C4F2D022E75C040039D352 /* LoginViewController.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
@@ -278,6 +281,7 @@
 				F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */,
 				F3DF2A2322DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld in Sources */,
 				F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */,
+				F3C4F2D122E75C040039D352 /* LoginViewController.swift in Sources */,
 				F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */,
 				F3155D1B22E6195A00BD1B64 /* InteractionPanToClose.swift in Sources */,
 				F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */,

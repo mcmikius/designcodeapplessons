@@ -1,15 +1,16 @@
 //
-//  PurchaseViewController.swift
+//  LoginViewController.swift
 //  DesignCodeAppLessons
 //
-//  Created by Mykhailo Bondarenko on 7/22/19.
+//  Created by Mykhailo Bondarenko on 7/23/19.
 //  Copyright © 2019 Mykhailo Bondarenko. All rights reserved.
 //
 
 import UIKit
 
-class PurchaseViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    
     @IBOutlet var panToClose: InteractionPanToClose!
     
     override func viewDidLoad() {
@@ -22,8 +23,8 @@ class PurchaseViewController: UIViewController {
         super.viewWillAppear(animated)
         panToClose.animateDialogAppear()
     }
-
     
+
     /*
     // MARK: - Navigation
 

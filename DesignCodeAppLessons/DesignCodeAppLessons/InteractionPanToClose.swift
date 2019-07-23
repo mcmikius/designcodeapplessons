@@ -16,12 +16,46 @@ class InteractionPanToClose: UIPercentDrivenInteractiveTransition {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var dialogView: UIView!
     
-    var gestureRecognizer: UIPanGestureRecognizer!
+    var panGestureRecognizer: UIPanGestureRecognizer!
+    var tapGestureRecognizer : UITapGestureRecognizer!
+    
+    func rotateDialogOut() {
+        let rotationAngle = CGFloat(Int(arc4random_uniform(60)) - 30) * CGFloat.pi / 180.0
+        
+        let rotationTransform = CGAffineTransform(rotationAngle: rotationAngle)
+        let translationTransform = CGAffineTransform(translationX: 0, y: 300)
+        
+        dialogView.alpha = 0
+        dialogView.transform = rotationTransform.concatenating(translationTransform)
+
+    }
+    
+    func animateDialogAppear() {
+        rotateDialogOut()
+        
+        let animator = UIViewPropertyAnimator(duration: 0.5, dampingRatio: 0.9) {
+            self.dialogView.alpha = 1
+            self.dialogView.transform = .identity
+        }
+        animator.startAnimation()
+    }
+    
+    @objc func animateDialogDisappearAndDismiss (_ sender : UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.rotateDialogOut()
+        }) { (finished) in
+            self.viewController.dismiss(animated: true)
+        }
+    }
     
     func setGestureRecognizer() {
-        gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handle))
-        gestureRecognizer.delegate = self
-        scrollView.addGestureRecognizer(gestureRecognizer)
+        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handle))
+        panGestureRecognizer.delegate = self
+        scrollView.addGestureRecognizer(panGestureRecognizer)
+        
+        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(animateDialogDisappearAndDismiss))
+        scrollView.addGestureRecognizer(tapGestureRecognizer)
+        tapGestureRecognizer.delegate = self
     }
     
     @objc func handle(_ gesture: UIPanGestureRecognizer) {
@@ -48,12 +82,12 @@ class InteractionPanToClose: UIPercentDrivenInteractiveTransition {
         
         visualEffectView.alpha = 1-percentComplete
         
-        let translation = gestureRecognizer.translation(in: viewController.view)
+        let translation = panGestureRecognizer.translation(in: viewController.view)
         
         let translationY = CGAffineTransform(translationX: 0, y: translation.y)
         let scale = CGAffineTransform(scaleX: 1-percentComplete, y: 1-percentComplete)
         
-        let origin = gestureRecognizer.location(in: viewController.view)
+        let origin = panGestureRecognizer.location(in: viewController.view)
         
         let frameWidth = viewController.view.frame.width
         let originX = origin.x/frameWidth

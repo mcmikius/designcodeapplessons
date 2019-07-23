@@ -8,5 +8,6 @@ target 'DesignCodeAppLessons' do
 
   # Pods for DesignCodeAppLessons
   pod 'Spring'
+  pod 'TPKeyboardAvoiding'
 
 end

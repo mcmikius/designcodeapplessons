@@ -1609,7 +1609,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0p-wK-bOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4301.6000000000004" y="694.45277361319347"/>
+            <point key="canvasLocation" x="4422" y="568"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2bd-2d-FgR">
@@ -2279,7 +2279,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="4302" y="1320"/>
+            <point key="canvasLocation" x="4431" y="1263"/>
         </scene>
         <!--Discount-->
         <scene sceneID="PDq-jg-3dd">
@@ -2548,7 +2548,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="5185" y="1320"/>
+            <point key="canvasLocation" x="5314" y="1263"/>
         </scene>
         <!--Login-->
         <scene sceneID="WQh-Kz-KQf">
@@ -2759,7 +2759,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="9882" y="504"/>
+            <point key="canvasLocation" x="8102" y="588"/>
         </scene>
     </scenes>
     <resources>

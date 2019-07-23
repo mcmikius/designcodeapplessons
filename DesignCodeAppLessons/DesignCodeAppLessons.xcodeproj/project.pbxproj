@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C118025AFD1076AF2BBDA336 /* Pods_DesignCodeAppLessons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA07AE877D5C68B471372F8 /* Pods_DesignCodeAppLessons.framework */; };
 		F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C8A22E063FB0043F30E /* SectionViewController.swift */; };
 		F3019C8D22E06C3C0043F30E /* HomeViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C8C22E06C3C0043F30E /* HomeViewController+extension.swift */; };
 		F3019C8F22E087FE0043F30E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C8E22E087FE0043F30E /* Data.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BA07AE877D5C68B471372F8 /* Pods_DesignCodeAppLessons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeAppLessons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC7D78DC305AD4876EF7C68 /* Pods-DesignCodeAppLessons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeAppLessons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons.debug.xcconfig"; sourceTree = "<group>"; };
+		99AF522CC4802C9E395E9914 /* Pods-DesignCodeAppLessons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeAppLessons.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons.release.xcconfig"; sourceTree = "<group>"; };
 		F3019C8A22E063FB0043F30E /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		F3019C8C22E06C3C0043F30E /* HomeViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+extension.swift"; sourceTree = "<group>"; };
 		F3019C8E22E087FE0043F30E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -70,16 +74,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F333587822E5B8C00002B8C1 /* WebKit.framework in Frameworks */,
+				C118025AFD1076AF2BBDA336 /* Pods_DesignCodeAppLessons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F332270E366F1F7EECAA7C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AC7D78DC305AD4876EF7C68 /* Pods-DesignCodeAppLessons.debug.xcconfig */,
+				99AF522CC4802C9E395E9914 /* Pods-DesignCodeAppLessons.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F333587622E5B8BF0002B8C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F333587722E5B8C00002B8C1 /* WebKit.framework */,
+				4BA07AE877D5C68B471372F8 /* Pods_DesignCodeAppLessons.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +105,7 @@
 				F3DF2A1922DF0FB90025684E /* DesignCodeAppLessons */,
 				F3DF2A1822DF0FB90025684E /* Products */,
 				F333587622E5B8BF0002B8C1 /* Frameworks */,
+				4F332270E366F1F7EECAA7C7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3DF2A2C22DF0FBA0025684E /* Build configuration list for PBXNativeTarget "DesignCodeAppLessons" */;
 			buildPhases = (
+				FF54BCE4C3D7D172FBB3C22E /* [CP] Check Pods Manifest.lock */,
 				F3DF2A1322DF0FB90025684E /* Sources */,
 				F3DF2A1422DF0FB90025684E /* Frameworks */,
 				F3DF2A1522DF0FB90025684E /* Resources */,
+				85548376B6CA379B4FE96006 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +216,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85548376B6CA379B4FE96006 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF54BCE4C3D7D172FBB3C22E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignCodeAppLessons-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3DF2A1322DF0FB90025684E /* Sources */ = {
@@ -368,36 +424,40 @@
 		};
 		F3DF2A2D22DF0FBA0025684E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC7D78DC305AD4876EF7C68 /* Pods-DesignCodeAppLessons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
 				INFOPLIST_FILE = DesignCodeAppLessons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmikius.DesignCodeAppLessons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F3DF2A2E22DF0FBA0025684E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AF522CC4802C9E395E9914 /* Pods-DesignCodeAppLessons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
 				INFOPLIST_FILE = DesignCodeAppLessons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcmikius.DesignCodeAppLessons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -30,6 +30,8 @@ class SectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         titleLabel.text = section["title"]
         captionLabel.text = section["caption"]

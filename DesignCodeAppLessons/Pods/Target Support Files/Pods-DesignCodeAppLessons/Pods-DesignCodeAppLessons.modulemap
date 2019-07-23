@@ -1,0 +1,6 @@
+framework module Pods_DesignCodeAppLessons {
+  umbrella header "Pods-DesignCodeAppLessons-umbrella.h"
+
+  export *
+  module * { export * }
+}

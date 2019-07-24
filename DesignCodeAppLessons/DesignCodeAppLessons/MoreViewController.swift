@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import MKRingProgressView
 
 class MoreViewController: UIViewController {
+    
+    // MARK: - IBOutlets
+    @IBOutlet weak var oneProgressView: RingProgressView!
+    @IBOutlet weak var twoProgressView: RingProgressView!
+    @IBOutlet weak var threeProgressView: RingProgressView!
+    @IBOutlet weak var oneProgressLabel: UILabel!
+    @IBOutlet weak var twoProgressLabel: UILabel!
+    @IBOutlet weak var threeProgressLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +26,19 @@ class MoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let progresses = [72,56,22]
+        
+        oneProgressLabel.animateTo(progresses[0])
+        twoProgressLabel.animateTo(progresses[1])
+        threeProgressLabel.animateTo(progresses[2])
+        
+        oneProgressView.animateTo(progresses[0])
+        twoProgressView.animateTo(progresses[1])
+        threeProgressView.animateTo(progresses[2])
+    }
     
     
     // MARK: - IBActions

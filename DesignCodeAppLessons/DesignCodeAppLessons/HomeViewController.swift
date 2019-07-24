@@ -78,7 +78,10 @@ class HomeViewController: UIViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeToSection" {
+        
+        guard let identifier = segue.identifier else { return }
+        switch identifier {
+        case "HomeToSection":
             let destinationViewController = segue.destination as! SectionViewController
             let indexPath = sender as! IndexPath
             let section = sections[indexPath.row]
@@ -97,6 +100,12 @@ class HomeViewController: UIViewController {
             UIView.animate(withDuration: 0.5) {
                 self.setNeedsStatusBarAppearanceUpdate()
             }
+            
+        case "Benefits":
+            segue.destination.view.translatesAutoresizingMaskIntoConstraints = false
+            
+        default:
+            break
         }
     }
     

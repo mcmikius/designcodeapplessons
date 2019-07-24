@@ -17,6 +17,7 @@ class ExerciseTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     var questions: Array<Dictionary<String,Any>>!
+    weak var delegate : ExerciseTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -22,7 +22,6 @@ class ExercisesTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        performSegue(withIdentifier: "PresentExerciseDialog", sender: nil)
     }
 
     // MARK: - Table view data source
@@ -35,6 +34,7 @@ class ExercisesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseTableViewCell", for: indexPath) as! ExerciseTableViewCell
         cell.questions = Array(exercises.values)[indexPath.row]
+        cell.delegate = self
         return cell
     }
 

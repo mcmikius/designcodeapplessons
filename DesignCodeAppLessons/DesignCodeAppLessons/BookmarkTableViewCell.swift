@@ -17,6 +17,9 @@ class BookmarkTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     
+    @IBOutlet var regularContraints: [NSLayoutConstraint]!
+    @IBOutlet var accessibilityConstraints: [NSLayoutConstraint]!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,6 +29,18 @@ class BookmarkTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if traitCollection.preferredContentSizeCategory != previousTraitCollection?.preferredContentSizeCategory {
+            if traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
+                NSLayoutConstraint.deactivate(regularContraints)
+                NSLayoutConstraint.activate(accessibilityConstraints)
+            } else {
+                NSLayoutConstraint.activate(regularContraints)
+                NSLayoutConstraint.deactivate(accessibilityConstraints)
+            }
+        }
     }
 
 }

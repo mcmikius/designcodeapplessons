@@ -697,29 +697,28 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bookmarks/code" translatesAutoresizingMaskIntoConstraints="NO" id="u2v-lq-ZpL">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="Bookmarks/code" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2v-lq-ZpL">
                                             <rect key="frame" x="16" y="20" width="44" height="44"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="44" id="Ivu-1t-WKc"/>
-                                                <constraint firstAttribute="width" constant="44" id="bZd-XB-uo2"/>
-                                            </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khA-Ng-Ur7">
                                             <rect key="frame" x="47" y="20" width="18" height="18"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xps-Rb-rWt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xps-Rb-rWt">
                                                     <rect key="frame" x="5.5" y="0.0" width="7.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="scaledFont" value="body"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="18" id="3OF-1a-Wqx"/>
                                                 <constraint firstItem="xps-Rb-rWt" firstAttribute="centerX" secondItem="khA-Ng-Ur7" secondAttribute="centerX" id="IvK-5g-W0C"/>
+                                                <constraint firstAttribute="height" secondItem="xps-Rb-rWt" secondAttribute="height" id="SpX-z4-mI3"/>
                                                 <constraint firstItem="xps-Rb-rWt" firstAttribute="centerY" secondItem="khA-Ng-Ur7" secondAttribute="centerY" id="cjv-yV-r28"/>
-                                                <constraint firstAttribute="height" constant="18" id="sxF-af-Yu0"/>
+                                                <constraint firstAttribute="width" secondItem="khA-Ng-Ur7" secondAttribute="height" multiplier="1:1" id="su9-AD-RaJ"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -730,18 +729,24 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3vk-bI-Off">
                                             <rect key="frame" x="73" y="20" width="286" height="86.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-ax-Zjh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-ax-Zjh">
                                                     <rect key="frame" x="0.0" y="0.0" width="286" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="scaledFont" value="callout"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a7-Hc-QwE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a7-Hc-QwE">
                                                     <rect key="frame" x="0.0" y="18" width="286" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="scaledFont" value="title2"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-Gf-GbO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-Gf-GbO">
                                                     <rect key="frame" x="0.0" y="42" width="286" height="44.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -751,7 +756,8 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="3vk-bI-Off" firstAttribute="leading" secondItem="khA-Ng-Ur7" secondAttribute="trailing" constant="8" id="1XK-xd-Jnf"/>
+                                        <constraint firstItem="3vk-bI-Off" firstAttribute="leading" secondItem="NLb-pn-FJs" secondAttribute="leadingMargin" id="0wq-qE-btd"/>
+                                        <constraint firstItem="3vk-bI-Off" firstAttribute="leading" secondItem="NLb-pn-FJs" secondAttribute="leadingMargin" constant="57" id="7UI-DU-YCJ"/>
                                         <constraint firstItem="3vk-bI-Off" firstAttribute="top" secondItem="NLb-pn-FJs" secondAttribute="top" constant="20" id="97G-1l-V1J"/>
                                         <constraint firstAttribute="bottom" secondItem="3vk-bI-Off" secondAttribute="bottom" constant="18" id="A4Z-1F-A5i"/>
                                         <constraint firstItem="u2v-lq-ZpL" firstAttribute="leading" secondItem="NLb-pn-FJs" secondAttribute="leadingMargin" id="Ef2-3R-sCV"/>
@@ -759,7 +765,14 @@
                                         <constraint firstItem="khA-Ng-Ur7" firstAttribute="trailing" secondItem="u2v-lq-ZpL" secondAttribute="trailing" constant="5" id="Jqg-Mf-juZ"/>
                                         <constraint firstItem="khA-Ng-Ur7" firstAttribute="top" secondItem="u2v-lq-ZpL" secondAttribute="top" id="cGH-tk-2qr"/>
                                         <constraint firstItem="u2v-lq-ZpL" firstAttribute="top" secondItem="NLb-pn-FJs" secondAttribute="topMargin" constant="9" id="e1f-lm-l6q"/>
+                                        <constraint firstItem="3vk-bI-Off" firstAttribute="top" secondItem="u2v-lq-ZpL" secondAttribute="bottom" id="pCj-pe-h9X"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0wq-qE-btd"/>
+                                            <exclude reference="pCj-pe-h9X"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="70" minY="0.0" maxX="16" maxY="0.0"/>
                                 <connections>
@@ -768,6 +781,10 @@
                                     <outlet property="chapterNumberLabel" destination="xps-Rb-rWt" id="Cr4-Uw-3Vw"/>
                                     <outlet property="chapterTitleLabel" destination="hdf-ax-Zjh" id="XX0-UI-Yie"/>
                                     <outlet property="titleLabel" destination="8a7-Hc-QwE" id="l4J-Df-S3M"/>
+                                    <outletCollection property="regularContraints" destination="7UI-DU-YCJ" collectionClass="NSMutableArray" id="dQy-Gs-bBB"/>
+                                    <outletCollection property="accessibilityConstraints" destination="0wq-qE-btd" collectionClass="NSMutableArray" id="Hfr-MN-mF9"/>
+                                    <outletCollection property="regularContraints" destination="97G-1l-V1J" collectionClass="NSMutableArray" id="e8l-I2-N9R"/>
+                                    <outletCollection property="accessibilityConstraints" destination="pCj-pe-h9X" collectionClass="NSMutableArray" id="H8F-aO-4KD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -788,7 +805,6 @@
         <!--Exercises-->
         <scene sceneID="nOd-Cp-hGA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3T7-iE-pRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="ExercisesTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g5i-Jy-1Yb" customClass="ExercisesTableViewController" customModule="DesignCodeAppLessons" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p35-B5-bxi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
@@ -1246,11 +1262,12 @@
                             <outlet property="delegate" destination="g5i-Jy-1Yb" id="vbP-un-qIO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Exercises" image="Tab Bar/exercises" selectedImage="Tab Bar/exercises-active" id="YoY-G7-shb"/>
+                    <tabBarItem key="tabBarItem" title="Exercises" image="Tab Bar/exercises" largeContentSizeImage="Tab Bar/exercises-accessible" selectedImage="Tab Bar/exercises-active" id="YoY-G7-shb"/>
                     <connections>
                         <segue destination="OQa-jr-KoT" kind="presentation" identifier="PresentExerciseDialog" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="eKd-5e-LsX"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T7-iE-pRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7178" y="-246"/>
         </scene>
@@ -1686,7 +1703,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K5v-KS-uvH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="Tab Bar/more" selectedImage="Tab Bar/more-active" id="nma-7V-jjr"/>
+                    <tabBarItem key="tabBarItem" title="More" image="Tab Bar/more" largeContentSizeImage="Tab Bar/more-accessible" selectedImage="Tab Bar/more-active" id="nma-7V-jjr"/>
                     <connections>
                         <outlet property="oneProgressLabel" destination="Ect-1E-go0" id="5ap-8P-GBS"/>
                         <outlet property="oneProgressView" destination="y8i-Kb-H0W" id="ZNb-sk-ig0"/>
@@ -1727,7 +1744,7 @@
         <scene sceneID="jIW-Gv-bgk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i6m-ex-Xvv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Tab Bar/home" selectedImage="Tab Bar/home-active" id="Q2B-TV-hhF"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Tab Bar/home" largeContentSizeImage="Tab Bar/home-accessible" selectedImage="Tab Bar/home-active" id="Q2B-TV-hhF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="9LW-Gf-CXi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1746,7 +1763,7 @@
         <scene sceneID="S2P-jK-MeR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q40-aM-HIA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chapters" image="Tab Bar/chapters" selectedImage="Tab Bar/chapters-active" id="BfU-dc-lVl"/>
+                    <tabBarItem key="tabBarItem" title="Chapters" image="Tab Bar/chapters" largeContentSizeImage="Tab Bar/chapters-accessible" selectedImage="Tab Bar/chapters-active" id="BfU-dc-lVl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eCS-A7-WQP">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -1765,7 +1782,7 @@
         <scene sceneID="VuV-CQ-TEG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ljh-Cb-lF7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bookmarks" image="Tab Bar/bookmarks" selectedImage="Tab Bar/bookmarks-active" id="d27-ck-qbl"/>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="Tab Bar/bookmarks" largeContentSizeImage="Tab Bar/bookmarks-accessible" selectedImage="Tab Bar/bookmarks-active" id="d27-ck-qbl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="HVk-T9-O77">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -1864,19 +1881,24 @@
         <image name="Placeholder/image-ring-2" width="70" height="70"/>
         <image name="Placeholder/image-ring-3" width="70" height="70"/>
         <image name="Tab Bar/bookmarks" width="20" height="26"/>
+        <image name="Tab Bar/bookmarks-accessible" width="60" height="78"/>
         <image name="Tab Bar/bookmarks-active" width="20" height="26"/>
         <image name="Tab Bar/chapters" width="28" height="24"/>
+        <image name="Tab Bar/chapters-accessible" width="84" height="72"/>
         <image name="Tab Bar/chapters-active" width="28" height="24"/>
         <image name="Tab Bar/exercises" width="30" height="24"/>
+        <image name="Tab Bar/exercises-accessible" width="90" height="72"/>
         <image name="Tab Bar/exercises-active" width="30" height="24"/>
         <image name="Tab Bar/home" width="24" height="25"/>
+        <image name="Tab Bar/home-accessible" width="72" height="75"/>
         <image name="Tab Bar/home-active" width="24" height="25"/>
         <image name="Tab Bar/more" width="30" height="8"/>
+        <image name="Tab Bar/more-accessible" width="90" height="24"/>
         <image name="Tab Bar/more-active" width="30" height="8"/>
         <image name="ios11" width="2880" height="1600"/>
         <image name="swift-wallpaper" width="5120" height="2880"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XQQ-3t-yFB"/>
+        <segue reference="lxv-x3-7lB"/>
     </inferredMetricsTieBreakers>
 </document>

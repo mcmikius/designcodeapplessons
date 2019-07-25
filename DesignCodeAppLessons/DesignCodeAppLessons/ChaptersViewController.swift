@@ -14,6 +14,9 @@ class ChaptersViewController: UIViewController {
 
     @IBOutlet weak var chapterOneCollectionView: UICollectionView!
     
+    // MARK: - Properties
+    var sections: Array<Section> = ContentAPI.shared.sections
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

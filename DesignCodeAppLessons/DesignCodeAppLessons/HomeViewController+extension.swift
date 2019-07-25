@@ -24,9 +24,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SectionCollectionViewCell", for: indexPath) as! SectionCollectionViewCell
         let section = sections[indexPath.row]
-        cell.titleLabel.text = section["title"]
-        cell.captionLabel.text = section["caption"]
-        cell.coverImageView.image = UIImage(named: section["image"]!)
+        cell.titleLabel.text = section.title
+        cell.captionLabel.text = section.caption
+        cell.coverImageView.image = UIImage(named: section.imageName)
         cell.layer.transform = animateCell(cellFrame: cell.frame)
         return cell
     }

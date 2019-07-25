@@ -15,6 +15,11 @@
 		F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9222E0D2D10043F30E /* TestimonialViewController.swift */; };
 		F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9422E0D30D0043F30E /* TestimonialCollectionViewCell.swift */; };
 		F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */; };
+		F303A58622E9BB3D00F086C2 /* Sections.json in Resources */ = {isa = PBXBuildFile; fileRef = F303A58522E9BB3D00F086C2 /* Sections.json */; };
+		F303A58822E9BBBA00F086C2 /* Bookmarks.json in Resources */ = {isa = PBXBuildFile; fileRef = F303A58722E9BBBA00F086C2 /* Bookmarks.json */; };
+		F303A58A22E9BCBF00F086C2 /* ContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58922E9BCBF00F086C2 /* ContentAPI.swift */; };
+		F303A58C22E9BFDD00F086C2 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58B22E9BFDD00F086C2 /* Section.swift */; };
+		F303A58E22E9C56C00F086C2 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58D22E9C56C00F086C2 /* Bookmark.swift */; };
 		F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */; };
 		F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */; };
 		F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */; };
@@ -71,6 +76,11 @@
 		F3019C9222E0D2D10043F30E /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		F3019C9422E0D30D0043F30E /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		F3019C9622E0D4C80043F30E /* TestimonialViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestimonialViewController+extension.swift"; sourceTree = "<group>"; };
+		F303A58522E9BB3D00F086C2 /* Sections.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sections.json; sourceTree = "<group>"; };
+		F303A58722E9BBBA00F086C2 /* Bookmarks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bookmarks.json; sourceTree = "<group>"; };
+		F303A58922E9BCBF00F086C2 /* ContentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPI.swift; sourceTree = "<group>"; };
+		F303A58B22E9BFDD00F086C2 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		F303A58D22E9C56C00F086C2 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
@@ -173,12 +183,12 @@
 				F3F198EB22E8BDF400AEB874 /* Section */,
 				F3F198E822E8BD8700AEB874 /* Dialogs */,
 				F3F198E522E8BC9A00AEB874 /* WebViewController */,
+				F3F198E022E8BB7500AEB874 /* Embed */,
 				F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */,
 				F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */,
 				F3019C8C22E06C3C0043F30E /* HomeViewController+extension.swift */,
 				F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */,
 				F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */,
-				F3F198E022E8BB7500AEB874 /* Embed */,
 				F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */,
 				F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */,
 				F333587422E59B3C0002B8C1 /* MoreViewController.swift */,
@@ -189,6 +199,11 @@
 				F3F198C222E83D1900AEB874 /* ExerciseTableViewCell.swift */,
 				F3F198C422E83DBB00AEB874 /* ExerciseTableViewCell+extension.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
+				F303A58B22E9BFDD00F086C2 /* Section.swift */,
+				F303A58D22E9C56C00F086C2 /* Bookmark.swift */,
+				F303A58522E9BB3D00F086C2 /* Sections.json */,
+				F303A58722E9BBBA00F086C2 /* Bookmarks.json */,
+				F303A58922E9BCBF00F086C2 /* ContentAPI.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3F198CA22E87FE700AEB874 /* QuestionCollectionViewCell.swift */,
 				F3F198CC22E8838C00AEB874 /* QuestionCellDelegate.swift */,
@@ -316,11 +331,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F303A58822E9BBBA00F086C2 /* Bookmarks.json in Resources */,
 				F3F198EA22E8BDDA00AEB874 /* Section.storyboard in Resources */,
 				F3F198E722E8BD0C00AEB874 /* Dialogs.storyboard in Resources */,
 				F3F198DF22E8BB1900AEB874 /* Embed.storyboard in Resources */,
 				F3DF2A2822DF0FBA0025684E /* LaunchScreen.storyboard in Resources */,
 				F3DF2A2522DF0FBA0025684E /* Assets.xcassets in Resources */,
+				F303A58622E9BB3D00F086C2 /* Sections.json in Resources */,
 				F3DF2A2022DF0FB90025684E /* Main.storyboard in Resources */,
 				F3F198E422E8BC6E00AEB874 /* WebViewController.storyboard in Resources */,
 			);
@@ -382,6 +399,7 @@
 				F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */,
 				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
+				F303A58A22E9BCBF00F086C2 /* ContentAPI.swift in Sources */,
 				F34AFA0E22E99E1500A2D9CB /* CATransform3D+extension.swift in Sources */,
 				F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */,
 				F3F198CB22E87FE700AEB874 /* QuestionCollectionViewCell.swift in Sources */,
@@ -405,8 +423,10 @@
 				F3F198C122E8375A00AEB874 /* MKRingProgressView+extension.swift in Sources */,
 				F39CF52022E7513D00B0B95C /* UILabel+extension.swift in Sources */,
 				F3F198C522E83DBB00AEB874 /* ExerciseTableViewCell+extension.swift in Sources */,
+				F303A58E22E9C56C00F086C2 /* Bookmark.swift in Sources */,
 				F3F198C322E83D1900AEB874 /* ExerciseTableViewCell.swift in Sources */,
 				F35A16C622E64C280093E879 /* PurchaseViewController.swift in Sources */,
+				F303A58C22E9BFDD00F086C2 /* Section.swift in Sources */,
 				F3F198D322E8897000AEB874 /* ScoreCollectionViewCell.swift in Sources */,
 				F333587A22E5C8D10002B8C1 /* UIViewController+extension.swift in Sources */,
 				F3F198CD22E8838C00AEB874 /* QuestionCellDelegate.swift in Sources */,

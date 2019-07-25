@@ -24,6 +24,9 @@
 		F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587422E59B3C0002B8C1 /* MoreViewController.swift */; };
 		F333587822E5B8C00002B8C1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333587722E5B8C00002B8C1 /* WebKit.framework */; };
 		F333587A22E5C8D10002B8C1 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */; };
+		F34AFA0A22E99BE000A2D9CB /* PresentMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AFA0922E99BE000A2D9CB /* PresentMoreViewController.swift */; };
+		F34AFA0C22E99D2500A2D9CB /* PresentMoreViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AFA0B22E99D2500A2D9CB /* PresentMoreViewController+extension.swift */; };
+		F34AFA0E22E99E1500A2D9CB /* CATransform3D+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AFA0D22E99E1500A2D9CB /* CATransform3D+extension.swift */; };
 		F35A16C622E64C280093E879 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A16C522E64C280093E879 /* PurchaseViewController.swift */; };
 		F39CF51E22E7502500B0B95C /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39CF51D22E7502500B0B95C /* DiscountViewController.swift */; };
 		F39CF52022E7513D00B0B95C /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */; };
@@ -77,6 +80,9 @@
 		F333587422E59B3C0002B8C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F333587722E5B8C00002B8C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F333587922E5C8D10002B8C1 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+		F34AFA0922E99BE000A2D9CB /* PresentMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentMoreViewController.swift; sourceTree = "<group>"; };
+		F34AFA0B22E99D2500A2D9CB /* PresentMoreViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentMoreViewController+extension.swift"; sourceTree = "<group>"; };
+		F34AFA0D22E99E1500A2D9CB /* CATransform3D+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransform3D+extension.swift"; sourceTree = "<group>"; };
 		F35A16C522E64C280093E879 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		F39CF51D22E7502500B0B95C /* DiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountViewController.swift; sourceTree = "<group>"; };
 		F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
@@ -190,6 +196,9 @@
 				F3F198D222E8897000AEB874 /* ScoreCollectionViewCell.swift */,
 				F3F198D422E88A9500AEB874 /* ScoreCellDelegate.swift */,
 				F3F198D622E8901700AEB874 /* UIImage+extension.swift */,
+				F34AFA0922E99BE000A2D9CB /* PresentMoreViewController.swift */,
+				F34AFA0B22E99D2500A2D9CB /* PresentMoreViewController+extension.swift */,
+				F34AFA0D22E99E1500A2D9CB /* CATransform3D+extension.swift */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
 				F3DF2A2622DF0FBA0025684E /* LaunchScreen.storyboard */,
 				F3DF2A2922DF0FBA0025684E /* Info.plist */,
@@ -366,12 +375,14 @@
 				F3DF2A1D22DF0FB90025684E /* HomeViewController.swift in Sources */,
 				F3019C9122E08DBE0043F30E /* SectionCollectionViewCell.swift in Sources */,
 				F3F198D722E8901700AEB874 /* UIImage+extension.swift in Sources */,
+				F34AFA0C22E99D2500A2D9CB /* PresentMoreViewController+extension.swift in Sources */,
 				F3F198C722E83ED500AEB874 /* ExercisesTableViewController.swift in Sources */,
 				F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */,
 				F3F198C922E8407600AEB874 /* ExerciseDialogViewController.swift in Sources */,
 				F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */,
 				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
+				F34AFA0E22E99E1500A2D9CB /* CATransform3D+extension.swift in Sources */,
 				F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */,
 				F3F198CB22E87FE700AEB874 /* QuestionCollectionViewCell.swift in Sources */,
 				F3155D1D22E61C1300BD1B64 /* InteractionPanToClose+extension.swift in Sources */,
@@ -383,6 +394,7 @@
 				F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */,
 				F3155D1B22E6195A00BD1B64 /* InteractionPanToClose.swift in Sources */,
 				F3019C8B22E063FB0043F30E /* SectionViewController.swift in Sources */,
+				F34AFA0A22E99BE000A2D9CB /* PresentMoreViewController.swift in Sources */,
 				F3F198D122E888A500AEB874 /* ExercisesTableViewController+extension.swift in Sources */,
 				F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */,
 				F3F198CF22E8869B00AEB874 /* ExerciseTableViewCellDelegate.swift in Sources */,

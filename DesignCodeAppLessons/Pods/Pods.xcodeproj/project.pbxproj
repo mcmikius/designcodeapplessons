@@ -7,163 +7,226 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0732637E2D54431D0F2680D9610CD78F /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A3CD28841C166EF90681A2518CE4F /* KeyboardLayoutConstraint.swift */; };
-		0BA90CA2DDA9471E59A1F48AFBDDB3ED /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C0B288268E8E5202BC9E376B11934 /* LoadingView.xib */; };
-		1045F5952C216156A75B376D1D604298 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBF20AF27FD4FDE747222EC56E2D75 /* SpringButton.swift */; };
-		14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD126C6633EA72D277AE29A802A34C4B /* MKRingProgressView-dummy.m */; };
-		1500B78FC44AAED561BD90AF696705F0 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B280102099F0DA1BBB5273F5968A438E /* SoundPlayer.swift */; };
-		1D70037A0B3E4A3DDAAEE179B6ABB071 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3975E80EBEA3FB8270CAF6E1E0BB0C48 /* DesignableView.swift */; };
-		24BA4D5D1F16648F66CE82879C9F92BE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15760ED8FFF20998C83F9C307B0029DF /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		29B7B49A4477F2FE45143E568C022B23 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7D7FA213AC3DD26756AFA878B90F15 /* Misc.swift */; };
-		29CE9DBD65A494DB313F2991C90787A0 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915EE98B247D7479E1FD7F2B1803F07F /* DesignableImageView.swift */; };
-		2B12DF1E24A75E8F8EC5556B37FA1F28 /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E26819FAA470583F1E35AB496BCDD3B0 /* Spring-dummy.m */; };
-		34CF154B3CE2F9E496757C74E151BF4B /* Pods-DesignCodeAppLessons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E1A134363CC1CF1EFF2C56DE37D138 /* Pods-DesignCodeAppLessons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		352C340763B400F31C26159F463D4B64 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC095EF2B6CA57DFAE69C8D102F785B1 /* TransitionZoom.swift */; };
-		35B26008F398A95E00F7DA259444914F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25587A269810182D54191C4E82EFE37 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3E1CED50F44E5D491DCD5003372DBF81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED4AB07AF69CF6402BE8477DD47C1F9 /* Images.xcassets */; };
-		4641B14031D2FF6603A1AB1AE8A81872 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5B3E7D1E406E9ED1D0065765FA9C3 /* AsyncImageView.swift */; };
-		46E1E5F755E08FAC7FC8BE0BEE146465 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABCCF83D28332D867F3A668F3CB2382 /* DesignableLabel.swift */; };
-		4B73B386F18C087F79B7F941A9986680 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F949BE355B1288030E9319D778B5812 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4ECF5718853AD0744FE6E028F4EB11A9 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4F1FAD622C455B0E1CFF9DC36CD450 /* TPKeyboardAvoiding-dummy.m */; };
+		023E2A46B1C5199DE046B07E63253E9A /* UITraitCollection+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E035866F932182C41D3508C1CACCBBF /* UITraitCollection+Ambience.swift */; };
+		035D9DDD176E387BA26DC8669467CB18 /* Pods-DesignCodeAppLessons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E1A134363CC1CF1EFF2C56DE37D138 /* Pods-DesignCodeAppLessons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04251F58C08623C05EB63EC5036B2776 /* AmbienceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48989B11D607EB057DA606642DD7125 /* AmbienceObject.swift */; };
+		0732637E2D54431D0F2680D9610CD78F /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483E777884347A269870A1896A7A811 /* KeyboardLayoutConstraint.swift */; };
+		0BA90CA2DDA9471E59A1F48AFBDDB3ED /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E0BC235801EC461AE3C87B73A6B0C5 /* LoadingView.xib */; };
+		1045F5952C216156A75B376D1D604298 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352AAE704A305E496E9876EC993118B /* SpringButton.swift */; };
+		123988DC07C26072F5A03CD4A3FE616D /* KeyValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3364B93AF482C213C0F8BA1F1A197D74 /* KeyValues.swift */; };
+		14CD2C142A04217A4E5042D319BD6964 /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF945965CA8070691E907F41203BBEF3 /* MKRingProgressView-dummy.m */; };
+		1500B78FC44AAED561BD90AF696705F0 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110582499824321C7CC766F2E1C716D /* SoundPlayer.swift */; };
+		1D70037A0B3E4A3DDAAEE179B6ABB071 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C0781F811DF390D4FFB97555249D8 /* DesignableView.swift */; };
+		24BA4D5D1F16648F66CE82879C9F92BE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D8E1B982F3FCF3C0648922FB82236B /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		284BC8089BB3D3C78288248F8629B93F /* AmbienceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4BF3A272BD0C77EFEBA9BCA19C34B /* AmbienceLabel.swift */; };
+		29B7B49A4477F2FE45143E568C022B23 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2446EF9BF09016A2B80B1F2F4A746F4 /* Misc.swift */; };
+		29CE9DBD65A494DB313F2991C90787A0 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC52AF7B8963A8D3DC0D8F95978FB27 /* DesignableImageView.swift */; };
+		2B12DF1E24A75E8F8EC5556B37FA1F28 /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF8BA888A2D76C35736F7C3DC4BB7F /* Spring-dummy.m */; };
+		2D0F57A87D4B55291A389C688937ED48 /* UITextField+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B17CF4608486F97F8D62800B5FDD7 /* UITextField+Ambience.swift */; };
+		30B8133BA980A03C83694E8E6DC8E5C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		352C340763B400F31C26159F463D4B64 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5F2844AB154FAF865AC3D8EF8A0F5 /* TransitionZoom.swift */; };
+		35B26008F398A95E00F7DA259444914F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC33242028B7D887BB7F35896D39239 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		39079116D196B0170B93F7F29658C16E /* AmbienceConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2156A94EAAF903A976666C1CE3E10 /* AmbienceConstraint.swift */; };
+		3B585FA4CB2A7D9A52A3868E1D9C2099 /* UIView+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290BAE2B222A2071E7E4B1AA81A29BE5 /* UIView+Ambience.swift */; };
+		3E1CED50F44E5D491DCD5003372DBF81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35336422DC31A997A498EDCF91628D7B /* Images.xcassets */; };
+		44DFA39933CB6B370316207E0451EE80 /* UITextView+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634EA005621FF256013FB7599BA9866 /* UITextView+Ambience.swift */; };
+		451C371EFD1A1FF348AF020BDE5B7686 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		4641B14031D2FF6603A1AB1AE8A81872 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C878F072C1DF5EDD58FAEA996E095171 /* AsyncImageView.swift */; };
+		46E1E5F755E08FAC7FC8BE0BEE146465 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF882D322C79280D8ECCF21548F0BEA /* DesignableLabel.swift */; };
+		4B64934413D6D7EF82150D61EE9C4326 /* AmbienceListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF834ECC48EB19387D7B9D5B6D7858D /* AmbienceListener.swift */; };
+		4B73B386F18C087F79B7F941A9986680 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD3D4D4B9AD53F2F862E58EDC66ED6A /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ECF5718853AD0744FE6E028F4EB11A9 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9AF212B35C7F256E63FE51A4D3E863 /* TPKeyboardAvoiding-dummy.m */; };
 		50F85BD08590CA9B3A7A04C5E94C9993 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		55765FA3526C83F9EAC8A71283051143 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BED93E15AA161328E5CAE5D9640C7608 /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E7FB82A077840DF34C3953BC806F8F4 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A3F80A4BABD73C4367C052CFD122BE /* TransitionManager.swift */; };
-		5FD7F44CF9CD3B08A62E4E6B6BB68030 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C628E50C4A694F1D8662C1DAA0359 /* SpringLabel.swift */; };
-		634BA282ED5A8A40D3DD2D336F1212D0 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = E63F8058DF9223688C8546646783A219 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		711025B8E5C65F47055B8BDE2D7143B2 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774A28D3A6645F5A38F03D88601B39D6 /* UnwindSegue.swift */; };
-		796621B5A6EBDE53FA99F5555B0F59D7 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C27E6E59E8F9B564202A561473D85 /* SpringTextView.swift */; };
-		7CEA02BEDE5F0BF8FD0A0290B5F5ED9C /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6A9A9938B59AA609E3FF1D0EBE945 /* DesignableTextView.swift */; };
-		912524D3ED3A35D18C66C9246F029DF7 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9979DFDD538D81C7850529BEADC3021E /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9140B6366B10B74C366EBF342680579E /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B3DF437A6C5860E104736BF7C0C86A /* SpringImageView.swift */; };
-		93591D9AD5D74959575DAA966898CEEE /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C423222765B8863BBE902E0837956F0 /* BlurView.swift */; };
+		55765FA3526C83F9EAC8A71283051143 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81A891E32C99C4416D48C86A014A9AF1 /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56A31DA316409FF4B6B3BE8D6C65B845 /* Ambience-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A49A7B955EE5BA9916E677084271B164 /* Ambience-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E7FB82A077840DF34C3953BC806F8F4 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028D17CFB55D5B4FB955F936CBD670A /* TransitionManager.swift */; };
+		5FD7F44CF9CD3B08A62E4E6B6BB68030 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D8DE7E6D599305F5E593C61FC77AC /* SpringLabel.swift */; };
+		634BA282ED5A8A40D3DD2D336F1212D0 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB4128F4AF60DB0B57C2CD7AE5F2E67 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		711025B8E5C65F47055B8BDE2D7143B2 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9581D970AA8E65ADAA39300D6C2E8445 /* UnwindSegue.swift */; };
+		796621B5A6EBDE53FA99F5555B0F59D7 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2B467B49B6642E8D01EDE3D488229 /* SpringTextView.swift */; };
+		7CEA02BEDE5F0BF8FD0A0290B5F5ED9C /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC1B62D5D8B0D56FC7E055CD6100A0 /* DesignableTextView.swift */; };
+		912524D3ED3A35D18C66C9246F029DF7 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D03D5A1CDDB93BA27AAD752F7D3266 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9140B6366B10B74C366EBF342680579E /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279F5DC938B0831DD6653FC56940F11 /* SpringImageView.swift */; };
+		93591D9AD5D74959575DAA966898CEEE /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B669BCEBBE94DA19CB459A283EC273A2 /* BlurView.swift */; };
+		9479ACDED2BAAFF34318B12F201F9CF0 /* UILabel+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2292CAA21DD1208BF611AE01F7E0CA /* UILabel+Ambience.swift */; };
+		973B3289ABD2DD34F7AC1B8794792DAE /* Defaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73083CB90A16AC61A7B92C725B32D02F /* Defaultable.swift */; };
+		9C72FDB5DD9F1BEBB31C33806521F585 /* Pods-DesignCodeAppLessons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A13EBCB47EA465D4B54263C46028B /* Pods-DesignCodeAppLessons-dummy.m */; };
+		9EC38294DD8432EE32D1EA1CE2D98E9B /* UIButton+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615E405E2851C3362F923CBD2FFCCE50 /* UIButton+Ambience.swift */; };
 		A241B0490C1DCCAC93C4C922350A8663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		A655FA3A985F470092D34931CAA9B1D3 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C500D953696E44EB53AF658A33AF2B7 /* DesignableTextField.swift */; };
+		A58E7F83C42561DF180A9CC54E932894 /* AmbienceStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59C8F0ABA9DFED75044E066DCFA55D /* AmbienceStates.swift */; };
+		A655FA3A985F470092D34931CAA9B1D3 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F69578F7A7EF05A51FCAC50BD845A6 /* DesignableTextField.swift */; };
 		A66834820288F352D28E4E7E4E5CD488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		A6CED5C2055858A15DA2A89283BE0946 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642AD144EC1D27178C704BC69E4F1A6 /* SpringTextField.swift */; };
+		A6CED5C2055858A15DA2A89283BE0946 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F636591CC6DE3CC38B4A2285C36F5E9 /* SpringTextField.swift */; };
 		A811D66B6A07AB8F23E7D73534A1A634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		AE3D3C297508B2A11ADF12CB95BC2C3D /* Pods-DesignCodeAppLessons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A13EBCB47EA465D4B54263C46028B /* Pods-DesignCodeAppLessons-dummy.m */; };
-		AF9B88A2C96F4498D44C8BA2C747FD0D /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA429E456465156AD4EDA0CF2AB8234 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B957D0566E20EDDE4C0D4C37F6DC3A1E /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E513DBE9985B331870A2B9C4B1B43BDD /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C027055833A0B6578D37DFBBF2AED005 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB4E787C90ADCA02BB7A181220EB5D /* SpringView.swift */; };
-		C70BBAB83307287049F532A4EB9CCEF1 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051BDA795F57CF5EFE8D0EE90E01E8A2 /* ImageLoader.swift */; };
-		CC60AF46BE0EB20F50602AD2EDFE953F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC435D433F237038C61A6EB25F8620FC /* DesignableButton.swift */; };
-		CFA425E34FFEF752EA7CB11A55F08A9E /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F362C8C340AEBD4E5657D23C5D0BA0A /* AutoTextView.swift */; };
-		D06D05EDB538E470C3AB10CCED0B8246 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8CE01DB129623E19D1DEADBCC18ADC /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C5A37C0ED8D0D7DB03A7D09239848 /* MKGradientGenerator.swift */; };
-		D6F9651ADAC53B92DCAAB44816333C03 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE58C41C8DFBF15AA39D17249F32D6 /* AsyncButton.swift */; };
-		E5854E6A53A8B1ABB1312522029212C6 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC444E2A33221390EEA4264C774553 /* DesignableTabBarController.swift */; };
-		E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE3F836DF052C37CBE2F2C6CC85A9A /* MKRingProgressLayer.swift */; };
-		E61861448B6C2D9EB4610DF5532BA204 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4897DBCCCF29FA66AFB58BCDE6CE64E /* LoadingView.swift */; };
-		E8C2E8CC39B46B8F89518E8A8BD66203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		EA658ED3170B393E01430E31E8482A8C /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394291510C08405A79B5E4FBB72C41BE /* SpringAnimation.swift */; };
-		ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9614F9203DA2F3F2CADA67A9651EBE13 /* MKRingProgressView.swift */; };
-		F44E1B920D6638069D7450CA3773C0FD /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F90FE128A47A407C332F797AB6CF5B /* Spring.swift */; };
-		F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0555A1B0FE721A1C0BEACE7FF56B8821 /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9508F021609D9FC860D693247580C72 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 188BE7F012743CAADBF3136D545D66D4 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A93D3F6A357E1F58202CC1D85FF2FE1E /* UISearchBar+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC2698599543FC8C25C0355C6C1DD9 /* UISearchBar+Ambience.swift */; };
+		AAB831A113624AC5E4BAA08A32850171 /* Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A211E052C3569D557131EF831736F6 /* Ambience.swift */; };
+		AF9B88A2C96F4498D44C8BA2C747FD0D /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D43F159E913EB82872E7F1F529A285 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B957D0566E20EDDE4C0D4C37F6DC3A1E /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D5D77C15636DFA44876C0FFC55D76F /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C027055833A0B6578D37DFBBF2AED005 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052A589C3EFC39746CBA3B446FDAF8E /* SpringView.swift */; };
+		C70BBAB83307287049F532A4EB9CCEF1 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF157CDBBD0D2711FB99D6E48E066E /* ImageLoader.swift */; };
+		CC60AF46BE0EB20F50602AD2EDFE953F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F426A05182A8162D0B72CCBCD2AF7E /* DesignableButton.swift */; };
+		CFA425E34FFEF752EA7CB11A55F08A9E /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3529D0BBF17008A8464444962AB2DB /* AutoTextView.swift */; };
+		D06D05EDB538E470C3AB10CCED0B8246 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 317C6617714178F52007A49661B3E4B9 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E24E27F1527380B47B4EA90E0A45B7 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E835BEC383BD2E1A66D0D7CF4979DF41 /* MKGradientGenerator.swift */; };
+		D57F9575AF54DAFA3CC8D71986F17898 /* UINavigationBar+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DCC993F14D4807CC66659710E6963 /* UINavigationBar+Ambience.swift */; };
+		D6F9651ADAC53B92DCAAB44816333C03 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1E3BF93C4974DB77D5739D6BAF268C /* AsyncButton.swift */; };
+		DD6FE226D51BC8F9FB3CF3D02E748F64 /* UITabBar+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7275B79EABBE70DA9A0758012818726B /* UITabBar+Ambience.swift */; };
+		E5854E6A53A8B1ABB1312522029212C6 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C41C519309193848870FEAC9BFB539 /* DesignableTabBarController.swift */; };
+		E5BD6B3AD2F98BCBAE36D4517F15A651 /* MKRingProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08736641C01F565C9A3897DFA87D5077 /* MKRingProgressLayer.swift */; };
+		E61861448B6C2D9EB4610DF5532BA204 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03667631C25042201A468E15338CDF /* LoadingView.swift */; };
+		EA658ED3170B393E01430E31E8482A8C /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BEDCCA51AB1AB24CDE06CFA12E8F69 /* SpringAnimation.swift */; };
+		ECEE5A8B2327749E46741EE35FE74E29 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148170B0A60A5367A33E4FD8289C9B9 /* MKRingProgressView.swift */; };
+		F44E1B920D6638069D7450CA3773C0FD /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB97AE70C11B989D1EF7CC1AEE2EF65 /* Spring.swift */; };
+		F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9E26796C9F91CF6159665A703658DB /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6B27B912F054A36C28B5D027FE4ABF2 /* Ambience-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 398552D6621C83923414FFF1ACCF81CA /* Ambience-dummy.m */; };
+		F9508F021609D9FC860D693247580C72 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 012F19A63EAE7C744A69D7AEF53215B9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCD508B0091D729D57C5A4DBEDA690CA /* StatusBarStyle+Ambience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B91FA183DF3CDF4FBA92227AF8A9E3 /* StatusBarStyle+Ambience.swift */; };
+		FD2C73A31A44BA71092ED85BECF0642E /* NSObject+NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A1F2734D3BADC08D2B6BF0769F93A /* NSObject+NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A296E2074167575105497D2D99D30201 /* PBXContainerItemProxy */ = {
+		3A4B7FBB83BA779FDBC8E8DE69B43181 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A062DD8462AB228A88272FF6B09535E9;
 			remoteInfo = Spring;
 		};
-		B85714396E61DBA33FC3354C64DACE8E /* PBXContainerItemProxy */ = {
+		3D9794106588D5F4313A73D753A20077 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 72C70A12E17485B41B7A7C5DA5AA071C;
-			remoteInfo = MKRingProgressView;
+			remoteGlobalIDString = F64E591A206C040007A52B7FF3310F8B;
+			remoteInfo = Ambience;
 		};
-		D757B3D37395B2EBA6D590D5029666C5 /* PBXContainerItemProxy */ = {
+		9B5F125AD7D9328DFD87C05405A7C224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1343042EDCB23E2CA267E65C520F9395;
 			remoteInfo = TPKeyboardAvoiding;
 		};
+		CCC42132D168869291247C9895BD1076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72C70A12E17485B41B7A7C5DA5AA071C;
+			remoteInfo = MKRingProgressView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		051BDA795F57CF5EFE8D0EE90E01E8A2 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
-		0555A1B0FE721A1C0BEACE7FF56B8821 /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
-		0A8C0B288268E8E5202BC9E376B11934 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
-		0EDE58C41C8DFBF15AA39D17249F32D6 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
-		0F362C8C340AEBD4E5657D23C5D0BA0A /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
-		0FFB4E787C90ADCA02BB7A181220EB5D /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
-		15760ED8FFF20998C83F9C307B0029DF /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		188BE7F012743CAADBF3136D545D66D4 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
-		19BE3F836DF052C37CBE2F2C6CC85A9A /* MKRingProgressLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressLayer.swift; path = MKRingProgressView/MKRingProgressLayer.swift; sourceTree = "<group>"; };
-		21F90FE128A47A407C332F797AB6CF5B /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
-		29D526DB4BC5800C1976E4A0798B67AD /* MKRingProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.xcconfig; sourceTree = "<group>"; };
+		012F19A63EAE7C744A69D7AEF53215B9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		08736641C01F565C9A3897DFA87D5077 /* MKRingProgressLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressLayer.swift; path = MKRingProgressView/MKRingProgressLayer.swift; sourceTree = "<group>"; };
+		0C132317F5DBA3DBC3601CC479FB768C /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Spring.modulemap; sourceTree = "<group>"; };
+		0CF882D322C79280D8ECCF21548F0BEA /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		0F636591CC6DE3CC38B4A2285C36F5E9 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		1483E777884347A269870A1896A7A811 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		1691028BA9C19BA109868F8930E83D5B /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		19CC2698599543FC8C25C0355C6C1DD9 /* UISearchBar+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UISearchBar+Ambience.swift"; sourceTree = "<group>"; };
+		23E0BC235801EC461AE3C87B73A6B0C5 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		244D9C90387DA27A67CE194A873EF30F /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
+		290BAE2B222A2071E7E4B1AA81A29BE5 /* UIView+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UIView+Ambience.swift"; sourceTree = "<group>"; };
+		2AB6847F96B550D273EEEF77AF3DC1F5 /* Ambience.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Ambience.modulemap; sourceTree = "<group>"; };
+		2EB462BDC7C984958C5BD0010BC2F70F /* Spring-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Spring-Info.plist"; sourceTree = "<group>"; };
+		2F03667631C25042201A468E15338CDF /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3907DA676AD5B9846D2574534351090B /* TPKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		317C6617714178F52007A49661B3E4B9 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		3364B93AF482C213C0F8BA1F1A197D74 /* KeyValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyValues.swift; path = Ambience/Classes/KeyValues.swift; sourceTree = "<group>"; };
+		35336422DC31A997A498EDCF91628D7B /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		35D5D77C15636DFA44876C0FFC55D76F /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		36A211E052C3569D557131EF831736F6 /* Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ambience.swift; path = Ambience/Classes/Ambience.swift; sourceTree = "<group>"; };
 		3920287181A7BBE2D10E0D82EFCCDA05 /* Pods-DesignCodeAppLessons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesignCodeAppLessons.release.xcconfig"; sourceTree = "<group>"; };
-		394291510C08405A79B5E4FBB72C41BE /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
-		3975E80EBEA3FB8270CAF6E1E0BB0C48 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		398552D6621C83923414FFF1ACCF81CA /* Ambience-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Ambience-dummy.m"; sourceTree = "<group>"; };
 		3B3A13EBCB47EA465D4B54263C46028B /* Pods-DesignCodeAppLessons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DesignCodeAppLessons-dummy.m"; sourceTree = "<group>"; };
-		3F136A20734AD27CC397572C4E62ADCE /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spring.framework; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C59C8F0ABA9DFED75044E066DCFA55D /* AmbienceStates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbienceStates.swift; path = Ambience/Classes/AmbienceStates.swift; sourceTree = "<group>"; };
+		3CB4128F4AF60DB0B57C2CD7AE5F2E67 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		3F136A20734AD27CC397572C4E62ADCE /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4052A589C3EFC39746CBA3B446FDAF8E /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4768D1E88BEE76D904699512083DC53A /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
+		47C41C519309193848870FEAC9BFB539 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		4A3529D0BBF17008A8464444962AB2DB /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		4CD3D4D4B9AD53F2F862E58EDC66ED6A /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		4D5C5025AC264F24718E77C52FCFE77A /* Pods-DesignCodeAppLessons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesignCodeAppLessons.debug.xcconfig"; sourceTree = "<group>"; };
-		529C27E6E59E8F9B564202A561473D85 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		5110582499824321C7CC766F2E1C716D /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		5279F5DC938B0831DD6653FC56940F11 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
 		5C879C59B3201A303024669C233C957D /* Pods-DesignCodeAppLessons-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DesignCodeAppLessons-acknowledgements.markdown"; sourceTree = "<group>"; };
-		65AC444E2A33221390EEA4264C774553 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
-		66B3DF437A6C5860E104736BF7C0C86A /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
-		7031A336D964696A40F2DDB2FB28B142 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
-		72A8306C3F1905FC4706B66C8C47449F /* MKRingProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKRingProgressView-Info.plist"; sourceTree = "<group>"; };
-		738A3CD28841C166EF90681A2518CE4F /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
-		73FBF20AF27FD4FDE747222EC56E2D75 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
-		774A28D3A6645F5A38F03D88601B39D6 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		6028D17CFB55D5B4FB955F936CBD670A /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		615E405E2851C3362F923CBD2FFCCE50 /* UIButton+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UIButton+Ambience.swift"; sourceTree = "<group>"; };
+		6352AAE704A305E496E9876EC993118B /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+		6B1E3BF93C4974DB77D5739D6BAF268C /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		6E6B17CF4608486F97F8D62800B5FDD7 /* UITextField+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UITextField+Ambience.swift"; sourceTree = "<group>"; };
+		70D8E1B982F3FCF3C0648922FB82236B /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		7275B79EABBE70DA9A0758012818726B /* UITabBar+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBar+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UITabBar+Ambience.swift"; sourceTree = "<group>"; };
+		73083CB90A16AC61A7B92C725B32D02F /* Defaultable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaultable.swift; path = Ambience/Classes/Defaultable.swift; sourceTree = "<group>"; };
+		76CCC9C5932327559D51DA0BC39CC108 /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
 		78E1A134363CC1CF1EFF2C56DE37D138 /* Pods-DesignCodeAppLessons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DesignCodeAppLessons-umbrella.h"; sourceTree = "<group>"; };
-		7ABCCF83D28332D867F3A668F3CB2382 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
-		7CE6A9A9938B59AA609E3FF1D0EBE945 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
 		7CF8DC31013A8B24230B3881A619775D /* Pods-DesignCodeAppLessons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DesignCodeAppLessons.modulemap"; sourceTree = "<group>"; };
-		83F66346083613A335759A8021DA5C83 /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Spring.modulemap; sourceTree = "<group>"; };
-		85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A7C5A37C0ED8D0D7DB03A7D09239848 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
-		8C500D953696E44EB53AF658A33AF2B7 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
-		8DA429E456465156AD4EDA0CF2AB8234 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
-		8E96EA965D5C70066A65AF787818901E /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
-		915EE98B247D7479E1FD7F2B1803F07F /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
-		9614F9203DA2F3F2CADA67A9651EBE13 /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
-		9979DFDD538D81C7850529BEADC3021E /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
-		9C423222765B8863BBE902E0837956F0 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F949BE355B1288030E9319D778B5812 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		7D9AF212B35C7F256E63FE51A4D3E863 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		7FB2B467B49B6642E8D01EDE3D488229 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		81A891E32C99C4416D48C86A014A9AF1 /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
+		81E1C1BD8F68C3829CFF3F15F4CFE1EA /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E035866F932182C41D3508C1CACCBBF /* UITraitCollection+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITraitCollection+Ambience.swift"; path = "Ambience/Classes/UITraitCollection+Ambience.swift"; sourceTree = "<group>"; };
+		900168F8E62EB1243267E740E6819634 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		9581D970AA8E65ADAA39300D6C2E8445 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		9864DE938ED692FB32EBDE78530106C6 /* MKRingProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.xcconfig; sourceTree = "<group>"; };
+		9B552F313835EDE27DD631675C129AE5 /* Ambience.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ambience.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA2156A94EAAF903A976666C1CE3E10 /* AmbienceConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbienceConstraint.swift; path = Ambience/Classes/AmbienceConstraint.swift; sourceTree = "<group>"; };
+		9F4203B49FF689CB3CC0672CAF8C8A8F /* Ambience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ambience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A148170B0A60A5367A33E4FD8289C9B9 /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		A23FC129A10595CED1652D4CB1B8750A /* Ambience-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ambience-prefix.pch"; sourceTree = "<group>"; };
 		A318E6727164CE8471F21FA8F520D38C /* Pods-DesignCodeAppLessons-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesignCodeAppLessons-frameworks.sh"; sourceTree = "<group>"; };
-		A4897DBCCCF29FA66AFB58BCDE6CE64E /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		A3BEDCCA51AB1AB24CDE06CFA12E8F69 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		A49A7B955EE5BA9916E677084271B164 /* Ambience-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ambience-umbrella.h"; sourceTree = "<group>"; };
 		A593A169DCAF760405845D592594CD8F /* Pods-DesignCodeAppLessons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DesignCodeAppLessons-Info.plist"; sourceTree = "<group>"; };
 		A6C871853AE4E13F50060BE6E1427CED /* Pods-DesignCodeAppLessons-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DesignCodeAppLessons-acknowledgements.plist"; sourceTree = "<group>"; };
-		AC095EF2B6CA57DFAE69C8D102F785B1 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
-		AD126C6633EA72D277AE29A802A34C4B /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
-		B02DF72062EC958530830EADA1314068 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
-		B280102099F0DA1BBB5273F5968A438E /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
-		B8FDD5C18A87491637DC8DB13F33EA28 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
-		B9657B62BCEDA4F90FF2F8CB5D4414D1 /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
-		BA4F1FAD622C455B0E1CFF9DC36CD450 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
-		BD7D7FA213AC3DD26756AFA878B90F15 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
-		BED93E15AA161328E5CAE5D9640C7608 /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
-		C9A3F80A4BABD73C4367C052CFD122BE /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
-		CC435D433F237038C61A6EB25F8620FC /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
-		CD8CE01DB129623E19D1DEADBCC18ADC /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
-		D25587A269810182D54191C4E82EFE37 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
-		D642AD144EC1D27178C704BC69E4F1A6 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
-		DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKRingProgressView.framework; path = MKRingProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E17AB4AA0E5E10894F59025FA6E79949 /* Spring-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Spring-Info.plist"; sourceTree = "<group>"; };
-		E26819FAA470583F1E35AB496BCDD3B0 /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
-		E513DBE9985B331870A2B9C4B1B43BDD /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
-		E63F8058DF9223688C8546646783A219 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		E7A5B3E7D1E406E9ED1D0065765FA9C3 /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
-		E7AECA6DE2DC54C6461B83006C0C061B /* Pods_DesignCodeAppLessons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DesignCodeAppLessons.framework; path = "Pods-DesignCodeAppLessons.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9D64F5148CCE8469A34D2370943DBD3 /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
-		EB1C628E50C4A694F1D8662C1DAA0359 /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
-		F74ECE58FBC858044A3107E4A9CEA223 /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
-		FED4AB07AF69CF6402BE8477DD47C1F9 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		B1D43F159E913EB82872E7F1F529A285 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		B4F69578F7A7EF05A51FCAC50BD845A6 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		B669BCEBBE94DA19CB459A283EC273A2 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		B74F3711890522F71F648005751365BC /* TPKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		B9B5F2844AB154FAF865AC3D8EF8A0F5 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		BBE4BF3A272BD0C77EFEBA9BCA19C34B /* AmbienceLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbienceLabel.swift; path = Ambience/Classes/AmbienceLabel.swift; sourceTree = "<group>"; };
+		BCB97AE70C11B989D1EF7CC1AEE2EF65 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
+		BCC52AF7B8963A8D3DC0D8F95978FB27 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
+		BD1D8DE7E6D599305F5E593C61FC77AC /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		C17A1F2734D3BADC08D2B6BF0769F93A /* NSObject+NotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+NotificationManager.swift"; path = "Ambience/Classes/NSObject+NotificationManager.swift"; sourceTree = "<group>"; };
+		C3604B859ECC298FB812A346386DE5CD /* MKRingProgressView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKRingProgressView-Info.plist"; sourceTree = "<group>"; };
+		C4EF8BA888A2D76C35736F7C3DC4BB7F /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
+		C634EA005621FF256013FB7599BA9866 /* UITextView+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UITextView+Ambience.swift"; sourceTree = "<group>"; };
+		C878F072C1DF5EDD58FAEA996E095171 /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		CEC33242028B7D887BB7F35896D39239 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		CF945965CA8070691E907F41203BBEF3 /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
+		D1B91FA183DF3CDF4FBA92227AF8A9E3 /* StatusBarStyle+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StatusBarStyle+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/StatusBarStyle+Ambience.swift"; sourceTree = "<group>"; };
+		D36A94241313ACE2781FD36C36BFE7D0 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
+		DBF834ECC48EB19387D7B9D5B6D7858D /* AmbienceListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbienceListener.swift; path = Ambience/Classes/AmbienceListener.swift; sourceTree = "<group>"; };
+		DDEF157CDBBD0D2711FB99D6E48E066E /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		DEBC1B62D5D8B0D56FC7E055CD6100A0 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKRingProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2446EF9BF09016A2B80B1F2F4A746F4 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		E3D03D5A1CDDB93BA27AAD752F7D3266 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		E48989B11D607EB057DA606642DD7125 /* AmbienceObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AmbienceObject.swift; path = Ambience/Classes/AmbienceObject.swift; sourceTree = "<group>"; };
+		E7AECA6DE2DC54C6461B83006C0C061B /* Pods_DesignCodeAppLessons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeAppLessons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E835BEC383BD2E1A66D0D7CF4979DF41 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		ED9DCC993F14D4807CC66659710E6963 /* UINavigationBar+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UINavigationBar+Ambience.swift"; sourceTree = "<group>"; };
+		ED9E26796C9F91CF6159665A703658DB /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
+		F0F426A05182A8162D0B72CCBCD2AF7E /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		FA2292CAA21DD1208BF611AE01F7E0CA /* UILabel+Ambience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Ambience.swift"; path = "Ambience/Classes/AmbienceViews/UILabel+Ambience.swift"; sourceTree = "<group>"; };
+		FD2D3D073C77003A0BB21DFBC99DF0DB /* Ambience-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Ambience-Info.plist"; sourceTree = "<group>"; };
+		FE4C0781F811DF390D4FFB97555249D8 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B4EB61EAF0736A18C55C781BFB0AF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451C371EFD1A1FF348AF020BDE5B7686 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		645749F37CA16172B5B9F4FAD42F27C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +244,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6F37AF70A9634E986B218EA4FE1D972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B8133BA980A03C83694E8E6DC8E5C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F958CB5B5EDC8216E072AF513F2BF576 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,17 +260,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF5E948717D81C9E0B76490216795EF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8C2E8CC39B46B8F89518E8A8BD66203 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047C203BA289BB833A0B027921BC7A57 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				6B1E3BF93C4974DB77D5739D6BAF268C /* AsyncButton.swift */,
+				C878F072C1DF5EDD58FAEA996E095171 /* AsyncImageView.swift */,
+				4A3529D0BBF17008A8464444962AB2DB /* AutoTextView.swift */,
+				B669BCEBBE94DA19CB459A283EC273A2 /* BlurView.swift */,
+				F0F426A05182A8162D0B72CCBCD2AF7E /* DesignableButton.swift */,
+				BCC52AF7B8963A8D3DC0D8F95978FB27 /* DesignableImageView.swift */,
+				0CF882D322C79280D8ECCF21548F0BEA /* DesignableLabel.swift */,
+				47C41C519309193848870FEAC9BFB539 /* DesignableTabBarController.swift */,
+				B4F69578F7A7EF05A51FCAC50BD845A6 /* DesignableTextField.swift */,
+				DEBC1B62D5D8B0D56FC7E055CD6100A0 /* DesignableTextView.swift */,
+				FE4C0781F811DF390D4FFB97555249D8 /* DesignableView.swift */,
+				DDEF157CDBBD0D2711FB99D6E48E066E /* ImageLoader.swift */,
+				1483E777884347A269870A1896A7A811 /* KeyboardLayoutConstraint.swift */,
+				2F03667631C25042201A468E15338CDF /* LoadingView.swift */,
+				E2446EF9BF09016A2B80B1F2F4A746F4 /* Misc.swift */,
+				5110582499824321C7CC766F2E1C716D /* SoundPlayer.swift */,
+				BCB97AE70C11B989D1EF7CC1AEE2EF65 /* Spring.swift */,
+				A3BEDCCA51AB1AB24CDE06CFA12E8F69 /* SpringAnimation.swift */,
+				6352AAE704A305E496E9876EC993118B /* SpringButton.swift */,
+				5279F5DC938B0831DD6653FC56940F11 /* SpringImageView.swift */,
+				BD1D8DE7E6D599305F5E593C61FC77AC /* SpringLabel.swift */,
+				0F636591CC6DE3CC38B4A2285C36F5E9 /* SpringTextField.swift */,
+				7FB2B467B49B6642E8D01EDE3D488229 /* SpringTextView.swift */,
+				4052A589C3EFC39746CBA3B446FDAF8E /* SpringView.swift */,
+				6028D17CFB55D5B4FB955F936CBD670A /* TransitionManager.swift */,
+				B9B5F2844AB154FAF865AC3D8EF8A0F5 /* TransitionZoom.swift */,
+				9581D970AA8E65ADAA39300D6C2E8445 /* UnwindSegue.swift */,
+				30672C91751F674245C644317758EE8E /* Resources */,
+				1B657C6C6A30A97A69A12FAF2838A8F1 /* Support Files */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,25 +307,79 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		43EAEBDB3D59FEDCAC7E79AFB67DC048 /* Pods */ = {
+		1B657C6C6A30A97A69A12FAF2838A8F1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA3CE5B845D3323A6DCF2622A2E9F69A /* MKRingProgressView */,
-				9FA3D2D67DA4AFE385B581F7FC6418B6 /* Spring */,
-				E49A17C7B580B4819CDFDA21123DDF37 /* TPKeyboardAvoiding */,
+				0C132317F5DBA3DBC3601CC479FB768C /* Spring.modulemap */,
+				244D9C90387DA27A67CE194A873EF30F /* Spring.xcconfig */,
+				C4EF8BA888A2D76C35736F7C3DC4BB7F /* Spring-dummy.m */,
+				2EB462BDC7C984958C5BD0010BC2F70F /* Spring-Info.plist */,
+				D36A94241313ACE2781FD36C36BFE7D0 /* Spring-prefix.pch */,
+				81A891E32C99C4416D48C86A014A9AF1 /* Spring-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spring";
+			sourceTree = "<group>";
+		};
+		24797BB8D12E98410F842F9A0196895B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E7C3C7F5CDDED8F323C04D44E9B3713 /* Ambience */,
+				7589D8543727501404B3092704F8CC7A /* MKRingProgressView */,
+				047C203BA289BB833A0B027921BC7A57 /* Spring */,
+				EE9B9417618D2C6A8639A4122119AA08 /* TPKeyboardAvoiding */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		536CB56A940953E7BBAE2CCC87FA0761 /* Products */ = {
+		30672C91751F674245C644317758EE8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */,
-				E7AECA6DE2DC54C6461B83006C0C061B /* Pods_DesignCodeAppLessons.framework */,
-				3F136A20734AD27CC397572C4E62ADCE /* Spring.framework */,
-				85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */,
+				35336422DC31A997A498EDCF91628D7B /* Images.xcassets */,
+				23E0BC235801EC461AE3C87B73A6B0C5 /* LoadingView.xib */,
 			);
-			name = Products;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5BE35B11E6D061D96E13288B4935CA1D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76CCC9C5932327559D51DA0BC39CC108 /* MKRingProgressView.modulemap */,
+				9864DE938ED692FB32EBDE78530106C6 /* MKRingProgressView.xcconfig */,
+				CF945965CA8070691E907F41203BBEF3 /* MKRingProgressView-dummy.m */,
+				C3604B859ECC298FB812A346386DE5CD /* MKRingProgressView-Info.plist */,
+				4768D1E88BEE76D904699512083DC53A /* MKRingProgressView-prefix.pch */,
+				ED9E26796C9F91CF6159665A703658DB /* MKRingProgressView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKRingProgressView";
+			sourceTree = "<group>";
+		};
+		5E7C3C7F5CDDED8F323C04D44E9B3713 /* Ambience */ = {
+			isa = PBXGroup;
+			children = (
+				36A211E052C3569D557131EF831736F6 /* Ambience.swift */,
+				9EA2156A94EAAF903A976666C1CE3E10 /* AmbienceConstraint.swift */,
+				BBE4BF3A272BD0C77EFEBA9BCA19C34B /* AmbienceLabel.swift */,
+				DBF834ECC48EB19387D7B9D5B6D7858D /* AmbienceListener.swift */,
+				E48989B11D607EB057DA606642DD7125 /* AmbienceObject.swift */,
+				3C59C8F0ABA9DFED75044E066DCFA55D /* AmbienceStates.swift */,
+				73083CB90A16AC61A7B92C725B32D02F /* Defaultable.swift */,
+				3364B93AF482C213C0F8BA1F1A197D74 /* KeyValues.swift */,
+				C17A1F2734D3BADC08D2B6BF0769F93A /* NSObject+NotificationManager.swift */,
+				D1B91FA183DF3CDF4FBA92227AF8A9E3 /* StatusBarStyle+Ambience.swift */,
+				615E405E2851C3362F923CBD2FFCCE50 /* UIButton+Ambience.swift */,
+				FA2292CAA21DD1208BF611AE01F7E0CA /* UILabel+Ambience.swift */,
+				ED9DCC993F14D4807CC66659710E6963 /* UINavigationBar+Ambience.swift */,
+				19CC2698599543FC8C25C0355C6C1DD9 /* UISearchBar+Ambience.swift */,
+				7275B79EABBE70DA9A0758012818726B /* UITabBar+Ambience.swift */,
+				6E6B17CF4608486F97F8D62800B5FDD7 /* UITextField+Ambience.swift */,
+				C634EA005621FF256013FB7599BA9866 /* UITextView+Ambience.swift */,
+				8E035866F932182C41D3508C1CACCBBF /* UITraitCollection+Ambience.swift */,
+				290BAE2B222A2071E7E4B1AA81A29BE5 /* UIView+Ambience.swift */,
+				B9F77FC4CE515513D040E270CE710AEB /* Support Files */,
+			);
+			path = Ambience;
 			sourceTree = "<group>";
 		};
 		6C582318D0FD1BF7D26CC5C4A063D852 /* Pods-DesignCodeAppLessons */ = {
@@ -246,104 +399,41 @@
 			path = "Target Support Files/Pods-DesignCodeAppLessons";
 			sourceTree = "<group>";
 		};
-		763095127B8328C7E7B81EA66343E5DC /* Support Files */ = {
+		7589D8543727501404B3092704F8CC7A /* MKRingProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				B8FDD5C18A87491637DC8DB13F33EA28 /* TPKeyboardAvoiding.modulemap */,
-				B02DF72062EC958530830EADA1314068 /* TPKeyboardAvoiding.xcconfig */,
-				BA4F1FAD622C455B0E1CFF9DC36CD450 /* TPKeyboardAvoiding-dummy.m */,
-				3907DA676AD5B9846D2574534351090B /* TPKeyboardAvoiding-Info.plist */,
-				7031A336D964696A40F2DDB2FB28B142 /* TPKeyboardAvoiding-prefix.pch */,
-				E513DBE9985B331870A2B9C4B1B43BDD /* TPKeyboardAvoiding-umbrella.h */,
+				E835BEC383BD2E1A66D0D7CF4979DF41 /* MKGradientGenerator.swift */,
+				08736641C01F565C9A3897DFA87D5077 /* MKRingProgressLayer.swift */,
+				A148170B0A60A5367A33E4FD8289C9B9 /* MKRingProgressView.swift */,
+				5BE35B11E6D061D96E13288B4935CA1D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TPKeyboardAvoiding";
-			sourceTree = "<group>";
-		};
-		9E4F745D307D9BF86F5E9FB895811F2A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F74ECE58FBC858044A3107E4A9CEA223 /* MKRingProgressView.modulemap */,
-				29D526DB4BC5800C1976E4A0798B67AD /* MKRingProgressView.xcconfig */,
-				AD126C6633EA72D277AE29A802A34C4B /* MKRingProgressView-dummy.m */,
-				72A8306C3F1905FC4706B66C8C47449F /* MKRingProgressView-Info.plist */,
-				E9D64F5148CCE8469A34D2370943DBD3 /* MKRingProgressView-prefix.pch */,
-				0555A1B0FE721A1C0BEACE7FF56B8821 /* MKRingProgressView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MKRingProgressView";
-			sourceTree = "<group>";
-		};
-		9FA3D2D67DA4AFE385B581F7FC6418B6 /* Spring */ = {
-			isa = PBXGroup;
-			children = (
-				0EDE58C41C8DFBF15AA39D17249F32D6 /* AsyncButton.swift */,
-				E7A5B3E7D1E406E9ED1D0065765FA9C3 /* AsyncImageView.swift */,
-				0F362C8C340AEBD4E5657D23C5D0BA0A /* AutoTextView.swift */,
-				9C423222765B8863BBE902E0837956F0 /* BlurView.swift */,
-				CC435D433F237038C61A6EB25F8620FC /* DesignableButton.swift */,
-				915EE98B247D7479E1FD7F2B1803F07F /* DesignableImageView.swift */,
-				7ABCCF83D28332D867F3A668F3CB2382 /* DesignableLabel.swift */,
-				65AC444E2A33221390EEA4264C774553 /* DesignableTabBarController.swift */,
-				8C500D953696E44EB53AF658A33AF2B7 /* DesignableTextField.swift */,
-				7CE6A9A9938B59AA609E3FF1D0EBE945 /* DesignableTextView.swift */,
-				3975E80EBEA3FB8270CAF6E1E0BB0C48 /* DesignableView.swift */,
-				051BDA795F57CF5EFE8D0EE90E01E8A2 /* ImageLoader.swift */,
-				738A3CD28841C166EF90681A2518CE4F /* KeyboardLayoutConstraint.swift */,
-				A4897DBCCCF29FA66AFB58BCDE6CE64E /* LoadingView.swift */,
-				BD7D7FA213AC3DD26756AFA878B90F15 /* Misc.swift */,
-				B280102099F0DA1BBB5273F5968A438E /* SoundPlayer.swift */,
-				21F90FE128A47A407C332F797AB6CF5B /* Spring.swift */,
-				394291510C08405A79B5E4FBB72C41BE /* SpringAnimation.swift */,
-				73FBF20AF27FD4FDE747222EC56E2D75 /* SpringButton.swift */,
-				66B3DF437A6C5860E104736BF7C0C86A /* SpringImageView.swift */,
-				EB1C628E50C4A694F1D8662C1DAA0359 /* SpringLabel.swift */,
-				D642AD144EC1D27178C704BC69E4F1A6 /* SpringTextField.swift */,
-				529C27E6E59E8F9B564202A561473D85 /* SpringTextView.swift */,
-				0FFB4E787C90ADCA02BB7A181220EB5D /* SpringView.swift */,
-				C9A3F80A4BABD73C4367C052CFD122BE /* TransitionManager.swift */,
-				AC095EF2B6CA57DFAE69C8D102F785B1 /* TransitionZoom.swift */,
-				774A28D3A6645F5A38F03D88601B39D6 /* UnwindSegue.swift */,
-				C3C3E1110D01721BF602E84F59F53F00 /* Resources */,
-				CA1ADC99AB00132C11D423FB651A266B /* Support Files */,
-			);
-			name = Spring;
-			path = Spring;
-			sourceTree = "<group>";
-		};
-		BA3CE5B845D3323A6DCF2622A2E9F69A /* MKRingProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				8A7C5A37C0ED8D0D7DB03A7D09239848 /* MKGradientGenerator.swift */,
-				19BE3F836DF052C37CBE2F2C6CC85A9A /* MKRingProgressLayer.swift */,
-				9614F9203DA2F3F2CADA67A9651EBE13 /* MKRingProgressView.swift */,
-				9E4F745D307D9BF86F5E9FB895811F2A /* Support Files */,
-			);
-			name = MKRingProgressView;
 			path = MKRingProgressView;
 			sourceTree = "<group>";
 		};
-		C3C3E1110D01721BF602E84F59F53F00 /* Resources */ = {
+		B822E8AA3D11263821401CA1E87E8306 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FED4AB07AF69CF6402BE8477DD47C1F9 /* Images.xcassets */,
-				0A8C0B288268E8E5202BC9E376B11934 /* LoadingView.xib */,
+				9F4203B49FF689CB3CC0672CAF8C8A8F /* Ambience.framework */,
+				DFFF396A7283A65507AFF68552B0BAE7 /* MKRingProgressView.framework */,
+				E7AECA6DE2DC54C6461B83006C0C061B /* Pods_DesignCodeAppLessons.framework */,
+				3F136A20734AD27CC397572C4E62ADCE /* Spring.framework */,
+				85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		CA1ADC99AB00132C11D423FB651A266B /* Support Files */ = {
+		B9F77FC4CE515513D040E270CE710AEB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				83F66346083613A335759A8021DA5C83 /* Spring.modulemap */,
-				B9657B62BCEDA4F90FF2F8CB5D4414D1 /* Spring.xcconfig */,
-				E26819FAA470583F1E35AB496BCDD3B0 /* Spring-dummy.m */,
-				E17AB4AA0E5E10894F59025FA6E79949 /* Spring-Info.plist */,
-				8E96EA965D5C70066A65AF787818901E /* Spring-prefix.pch */,
-				BED93E15AA161328E5CAE5D9640C7608 /* Spring-umbrella.h */,
+				2AB6847F96B550D273EEEF77AF3DC1F5 /* Ambience.modulemap */,
+				9B552F313835EDE27DD631675C129AE5 /* Ambience.xcconfig */,
+				398552D6621C83923414FFF1ACCF81CA /* Ambience-dummy.m */,
+				FD2D3D073C77003A0BB21DFBC99DF0DB /* Ambience-Info.plist */,
+				A23FC129A10595CED1652D4CB1B8750A /* Ambience-prefix.pch */,
+				A49A7B955EE5BA9916E677084271B164 /* Ambience-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Spring";
+			path = "../Target Support Files/Ambience";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -351,8 +441,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				43EAEBDB3D59FEDCAC7E79AFB67DC048 /* Pods */,
-				536CB56A940953E7BBAE2CCC87FA0761 /* Products */,
+				24797BB8D12E98410F842F9A0196895B /* Pods */,
+				B822E8AA3D11263821401CA1E87E8306 /* Products */,
 				D97BBD1CC3F38AEF3881DE58F81BDA5D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -374,20 +464,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E49A17C7B580B4819CDFDA21123DDF37 /* TPKeyboardAvoiding */ = {
+		EE5FE0B4BF4A754FBD9EBE21151F8329 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CD8CE01DB129623E19D1DEADBCC18ADC /* TPKeyboardAvoidingCollectionView.h */,
-				9979DFDD538D81C7850529BEADC3021E /* TPKeyboardAvoidingCollectionView.m */,
-				9F949BE355B1288030E9319D778B5812 /* TPKeyboardAvoidingScrollView.h */,
-				D25587A269810182D54191C4E82EFE37 /* TPKeyboardAvoidingScrollView.m */,
-				E63F8058DF9223688C8546646783A219 /* TPKeyboardAvoidingTableView.h */,
-				8DA429E456465156AD4EDA0CF2AB8234 /* TPKeyboardAvoidingTableView.m */,
-				188BE7F012743CAADBF3136D545D66D4 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
-				15760ED8FFF20998C83F9C307B0029DF /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
-				763095127B8328C7E7B81EA66343E5DC /* Support Files */,
+				1691028BA9C19BA109868F8930E83D5B /* TPKeyboardAvoiding.modulemap */,
+				900168F8E62EB1243267E740E6819634 /* TPKeyboardAvoiding.xcconfig */,
+				7D9AF212B35C7F256E63FE51A4D3E863 /* TPKeyboardAvoiding-dummy.m */,
+				B74F3711890522F71F648005751365BC /* TPKeyboardAvoiding-Info.plist */,
+				81E1C1BD8F68C3829CFF3F15F4CFE1EA /* TPKeyboardAvoiding-prefix.pch */,
+				35D5D77C15636DFA44876C0FFC55D76F /* TPKeyboardAvoiding-umbrella.h */,
 			);
-			name = TPKeyboardAvoiding;
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		EE9B9417618D2C6A8639A4122119AA08 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				317C6617714178F52007A49661B3E4B9 /* TPKeyboardAvoidingCollectionView.h */,
+				E3D03D5A1CDDB93BA27AAD752F7D3266 /* TPKeyboardAvoidingCollectionView.m */,
+				4CD3D4D4B9AD53F2F862E58EDC66ED6A /* TPKeyboardAvoidingScrollView.h */,
+				CEC33242028B7D887BB7F35896D39239 /* TPKeyboardAvoidingScrollView.m */,
+				3CB4128F4AF60DB0B57C2CD7AE5F2E67 /* TPKeyboardAvoidingTableView.h */,
+				B1D43F159E913EB82872E7F1F529A285 /* TPKeyboardAvoidingTableView.m */,
+				012F19A63EAE7C744A69D7AEF53215B9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				70D8E1B982F3FCF3C0648922FB82236B /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				EE5FE0B4BF4A754FBD9EBE21151F8329 /* Support Files */,
+			);
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
@@ -399,6 +502,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52449380EF7F9A190A1A5C9ECD3A968 /* MKRingProgressView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ED78B692A558C269EF75BD2B8D0E7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035D9DDD176E387BA26DC8669467CB18 /* Pods-DesignCodeAppLessons-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,19 +525,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACC8F9BEBA0D3450135F01CF769BC517 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34CF154B3CE2F9E496757C74E151BF4B /* Pods-DesignCodeAppLessons-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D72C6FA9C18EBBB5947BA00EB5B3FC3B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55765FA3526C83F9EAC8A71283051143 /* Spring-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB94C39A40C36F19FDE6CC445BE9DFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A31DA316409FF4B6B3BE8D6C65B845 /* Ambience-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,23 +600,42 @@
 		};
 		CD465B2C1243F1B67FF21F4140EBA891 /* Pods-DesignCodeAppLessons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 452E5145202BBAA82466AB70C0199F7B /* Build configuration list for PBXNativeTarget "Pods-DesignCodeAppLessons" */;
+			buildConfigurationList = FAC123B9CAD3C24A8BB9B77CE6C77478 /* Build configuration list for PBXNativeTarget "Pods-DesignCodeAppLessons" */;
 			buildPhases = (
-				ACC8F9BEBA0D3450135F01CF769BC517 /* Headers */,
-				B8F7A9B7AC5193D10AAC1D3F9DA4E353 /* Sources */,
-				FF5E948717D81C9E0B76490216795EF8 /* Frameworks */,
-				DE9ECD0660E6DFA02A50BF5095555ECD /* Resources */,
+				89ED78B692A558C269EF75BD2B8D0E7C /* Headers */,
+				7B234F681B562EE69496B311A1BC4C52 /* Sources */,
+				C6F37AF70A9634E986B218EA4FE1D972 /* Frameworks */,
+				15C9718FC9B45918DEFC62C0DFC9BE2F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7AF7319DDB6393503B247A5B13BB351D /* PBXTargetDependency */,
-				14B38F4158C590D50340DE6F25461DB7 /* PBXTargetDependency */,
-				B33C0DECB57DA89E1917B5D3A324BA0E /* PBXTargetDependency */,
+				A15F975C3F84867909CB3D91CFE5C559 /* PBXTargetDependency */,
+				8A15952D7E6585F36B1013A2ACFEB8AD /* PBXTargetDependency */,
+				0A68CA20DD3D2E38277CF00F930778FC /* PBXTargetDependency */,
+				63D5D30FB6C6CE5F444C651ECACDDFC1 /* PBXTargetDependency */,
 			);
 			name = "Pods-DesignCodeAppLessons";
 			productName = "Pods-DesignCodeAppLessons";
 			productReference = E7AECA6DE2DC54C6461B83006C0C061B /* Pods_DesignCodeAppLessons.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F64E591A206C040007A52B7FF3310F8B /* Ambience */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F6AFB2DB7C2B48A23514A60A6C0135A /* Build configuration list for PBXNativeTarget "Ambience" */;
+			buildPhases = (
+				FCB94C39A40C36F19FDE6CC445BE9DFB /* Headers */,
+				CE0066EC13F2737135459F6D5ECB60A6 /* Sources */,
+				1B4EB61EAF0736A18C55C781BFB0AF97 /* Frameworks */,
+				235F72F359BA13F4332521DFA8FE72FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ambience;
+			productName = Ambience;
+			productReference = 9F4203B49FF689CB3CC0672CAF8C8A8F /* Ambience.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -525,10 +655,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 536CB56A940953E7BBAE2CCC87FA0761 /* Products */;
+			productRefGroup = B822E8AA3D11263821401CA1E87E8306 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F64E591A206C040007A52B7FF3310F8B /* Ambience */,
 				72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */,
 				CD465B2C1243F1B67FF21F4140EBA891 /* Pods-DesignCodeAppLessons */,
 				A062DD8462AB228A88272FF6B09535E9 /* Spring */,
@@ -538,6 +669,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		15C9718FC9B45918DEFC62C0DFC9BE2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235F72F359BA13F4332521DFA8FE72FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64AC7CAD8B1BAF00C6C1C435B4CB03A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -555,13 +700,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B707F6653FF5F036CD2EE283560E3729 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE9ECD0660E6DFA02A50BF5095555ECD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -629,41 +767,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8F7A9B7AC5193D10AAC1D3F9DA4E353 /* Sources */ = {
+		7B234F681B562EE69496B311A1BC4C52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3D3C297508B2A11ADF12CB95BC2C3D /* Pods-DesignCodeAppLessons-dummy.m in Sources */,
+				9C72FDB5DD9F1BEBB31C33806521F585 /* Pods-DesignCodeAppLessons-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0066EC13F2737135459F6D5ECB60A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B27B912F054A36C28B5D027FE4ABF2 /* Ambience-dummy.m in Sources */,
+				AAB831A113624AC5E4BAA08A32850171 /* Ambience.swift in Sources */,
+				39079116D196B0170B93F7F29658C16E /* AmbienceConstraint.swift in Sources */,
+				284BC8089BB3D3C78288248F8629B93F /* AmbienceLabel.swift in Sources */,
+				4B64934413D6D7EF82150D61EE9C4326 /* AmbienceListener.swift in Sources */,
+				04251F58C08623C05EB63EC5036B2776 /* AmbienceObject.swift in Sources */,
+				A58E7F83C42561DF180A9CC54E932894 /* AmbienceStates.swift in Sources */,
+				973B3289ABD2DD34F7AC1B8794792DAE /* Defaultable.swift in Sources */,
+				123988DC07C26072F5A03CD4A3FE616D /* KeyValues.swift in Sources */,
+				FD2C73A31A44BA71092ED85BECF0642E /* NSObject+NotificationManager.swift in Sources */,
+				FCD508B0091D729D57C5A4DBEDA690CA /* StatusBarStyle+Ambience.swift in Sources */,
+				9EC38294DD8432EE32D1EA1CE2D98E9B /* UIButton+Ambience.swift in Sources */,
+				9479ACDED2BAAFF34318B12F201F9CF0 /* UILabel+Ambience.swift in Sources */,
+				D57F9575AF54DAFA3CC8D71986F17898 /* UINavigationBar+Ambience.swift in Sources */,
+				A93D3F6A357E1F58202CC1D85FF2FE1E /* UISearchBar+Ambience.swift in Sources */,
+				DD6FE226D51BC8F9FB3CF3D02E748F64 /* UITabBar+Ambience.swift in Sources */,
+				2D0F57A87D4B55291A389C688937ED48 /* UITextField+Ambience.swift in Sources */,
+				44DFA39933CB6B370316207E0451EE80 /* UITextView+Ambience.swift in Sources */,
+				023E2A46B1C5199DE046B07E63253E9A /* UITraitCollection+Ambience.swift in Sources */,
+				3B585FA4CB2A7D9A52A3868E1D9C2099 /* UIView+Ambience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14B38F4158C590D50340DE6F25461DB7 /* PBXTargetDependency */ = {
+		0A68CA20DD3D2E38277CF00F930778FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Spring;
 			target = A062DD8462AB228A88272FF6B09535E9 /* Spring */;
-			targetProxy = A296E2074167575105497D2D99D30201 /* PBXContainerItemProxy */;
+			targetProxy = 3A4B7FBB83BA779FDBC8E8DE69B43181 /* PBXContainerItemProxy */;
 		};
-		7AF7319DDB6393503B247A5B13BB351D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MKRingProgressView;
-			target = 72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */;
-			targetProxy = B85714396E61DBA33FC3354C64DACE8E /* PBXContainerItemProxy */;
-		};
-		B33C0DECB57DA89E1917B5D3A324BA0E /* PBXTargetDependency */ = {
+		63D5D30FB6C6CE5F444C651ECACDDFC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPKeyboardAvoiding;
 			target = 1343042EDCB23E2CA267E65C520F9395 /* TPKeyboardAvoiding */;
-			targetProxy = D757B3D37395B2EBA6D590D5029666C5 /* PBXContainerItemProxy */;
+			targetProxy = 9B5F125AD7D9328DFD87C05405A7C224 /* PBXContainerItemProxy */;
+		};
+		8A15952D7E6585F36B1013A2ACFEB8AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKRingProgressView;
+			target = 72C70A12E17485B41B7A7C5DA5AA071C /* MKRingProgressView */;
+			targetProxy = CCC42132D168869291247C9895BD1076 /* PBXContainerItemProxy */;
+		};
+		A15F975C3F84867909CB3D91CFE5C559 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Ambience;
+			target = F64E591A206C040007A52B7FF3310F8B /* Ambience */;
+			targetProxy = 3D9794106588D5F4313A73D753A20077 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		160B60029FFA2BF18AA0707B74D504BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9657B62BCEDA4F90FF2F8CB5D4414D1 /* Spring.xcconfig */;
+			baseConfigurationReference = 244D9C90387DA27A67CE194A873EF30F /* Spring.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -756,48 +927,12 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2FEA576F637A40AB222E48A8B960ED45 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B02DF72062EC958530830EADA1314068 /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3B548B0A9DD7EA9DDF3061D9F6B80786 /* Debug */ = {
+		19CA086CACF86BE182DC614E23608D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D5C5025AC264F24718E77C52FCFE77A /* Pods-DesignCodeAppLessons.debug.xcconfig */;
 			buildSettings = {
@@ -835,12 +970,10 @@
 			};
 			name = Debug;
 		};
-		705EB6052E7A79D8031F5A806863C665 /* Release */ = {
+		2FEA576F637A40AB222E48A8B960ED45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3920287181A7BBE2D10E0D82EFCCDA05 /* Pods-DesignCodeAppLessons.release.xcconfig */;
+			baseConfigurationReference = 900168F8E62EB1243267E740E6819634 /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -850,23 +983,58 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46C6D5A466F3D175DDA4A70BD26A0D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B552F313835EDE27DD631675C129AE5 /* Ambience.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Ambience/Ambience-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Ambience/Ambience-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Ambience/Ambience.modulemap";
+				PRODUCT_MODULE_NAME = Ambience;
+				PRODUCT_NAME = Ambience;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -876,7 +1044,7 @@
 		};
 		858B50878DBB9C0C49E2E71419627F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D526DB4BC5800C1976E4A0798B67AD /* MKRingProgressView.xcconfig */;
+			baseConfigurationReference = 9864DE938ED692FB32EBDE78530106C6 /* MKRingProgressView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -911,7 +1079,7 @@
 		};
 		AEC63482382C0BB7ED34CC80FDCD0946 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D526DB4BC5800C1976E4A0798B67AD /* MKRingProgressView.xcconfig */;
+			baseConfigurationReference = 9864DE938ED692FB32EBDE78530106C6 /* MKRingProgressView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1000,14 +1168,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 		BA431044221ACE40454544FB670A38F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9657B62BCEDA4F90FF2F8CB5D4414D1 /* Spring.xcconfig */;
+			baseConfigurationReference = 244D9C90387DA27A67CE194A873EF30F /* Spring.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1042,7 +1210,7 @@
 		};
 		C7AAF3441B51A229A3441238CBDB67A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B02DF72062EC958530830EADA1314068 /* TPKeyboardAvoiding.xcconfig */;
+			baseConfigurationReference = 900168F8E62EB1243267E740E6819634 /* TPKeyboardAvoiding.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1075,6 +1243,80 @@
 			};
 			name = Debug;
 		};
+		CF919D50F4CBD5B9E9F44779DD862DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3920287181A7BBE2D10E0D82EFCCDA05 /* Pods-DesignCodeAppLessons.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E329B473BA149AB371A43896A139DBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B552F313835EDE27DD631675C129AE5 /* Ambience.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Ambience/Ambience-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Ambience/Ambience-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Ambience/Ambience.modulemap";
+				PRODUCT_MODULE_NAME = Ambience;
+				PRODUCT_NAME = Ambience;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1087,11 +1329,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		452E5145202BBAA82466AB70C0199F7B /* Build configuration list for PBXNativeTarget "Pods-DesignCodeAppLessons" */ = {
+		2F6AFB2DB7C2B48A23514A60A6C0135A /* Build configuration list for PBXNativeTarget "Ambience" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B548B0A9DD7EA9DDF3061D9F6B80786 /* Debug */,
-				705EB6052E7A79D8031F5A806863C665 /* Release */,
+				E329B473BA149AB371A43896A139DBC4 /* Debug */,
+				46C6D5A466F3D175DDA4A70BD26A0D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1119,6 +1361,15 @@
 			buildConfigurations = (
 				C7AAF3441B51A229A3441238CBDB67A9 /* Debug */,
 				2FEA576F637A40AB222E48A8B960ED45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC123B9CAD3C24A8BB9B77CE6C77478 /* Build configuration list for PBXNativeTarget "Pods-DesignCodeAppLessons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CA086CACF86BE182DC614E23608D10 /* Debug */,
+				CF919D50F4CBD5B9E9F44779DD862DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

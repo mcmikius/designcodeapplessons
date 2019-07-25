@@ -1271,28 +1271,42 @@
             </objects>
             <point key="canvasLocation" x="7178" y="-246"/>
         </scene>
-        <!--More-->
+        <!--View Controller-->
         <scene sceneID="AQA-jp-cli">
             <objects>
                 <viewController storyboardIdentifier="MoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gOx-3D-Jp4" customClass="MoreViewController" customModule="DesignCodeAppLessons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHc-Ic-4XP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taG-Rr-JC0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ct2-7W-V59">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="751"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-CQ-pVY">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="731"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6Q-Oj-0GB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                        <connections>
+                                            <action selector="tappedOutsideDialog:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="LcT-nC-A3e"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yC0-Ul-zeM" userLabel="Dialog View" customClass="DesignableView" customModule="Spring">
                                         <rect key="frame" x="20" y="20" width="335" height="684"/>
                                         <subviews>
+                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zge-c0-h8c">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="684"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wvQ-lK-dhF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="684"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </view>
+                                                <blurEffect style="light"/>
+                                            </visualEffectView>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-aT-UTj" userLabel="Sizing View" customClass="DesignableView" customModule="Spring">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="684"/>
                                                 <subviews>
@@ -1301,6 +1315,12 @@
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HkU-H3-GTy">
                                                         <rect key="frame" x="20" y="46" width="295" height="98"/>
@@ -1347,6 +1367,12 @@
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                         </subviews>
                                                                         <constraints>
@@ -1364,6 +1390,12 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
@@ -1409,6 +1441,12 @@
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                         </subviews>
                                                                         <constraints>
@@ -1426,6 +1464,12 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
@@ -1471,6 +1515,12 @@
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
                                                                             </label>
                                                                         </subviews>
                                                                         <constraints>
@@ -1488,6 +1538,12 @@
                                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
@@ -1508,6 +1564,15 @@
                                                                         <state key="normal" title="Login" image="More/logo">
                                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <segue destination="pEv-DU-db8" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Mha-Y4-26d"/>
                                                                         </connections>
@@ -1521,6 +1586,15 @@
                                                                         <state key="normal" title="Updates" image="More/info">
                                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-ax-sz1">
                                                                         <rect key="frame" x="0.0" y="120.5" width="335" height="59"/>
@@ -1531,6 +1605,15 @@
                                                                         <state key="normal" title="Read on Safari" image="More/safari">
                                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="showSafari:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="cBw-8e-uxT"/>
                                                                         </connections>
@@ -1549,6 +1632,15 @@
                                                                         <state key="normal" title="Community" image="More/community">
                                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="showCommunity:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="cmA-ZS-ILz"/>
                                                                         </connections>
@@ -1562,6 +1654,15 @@
                                                                         <state key="normal" title="Email Support" image="More/email">
                                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="sendEmail:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="vrK-Iq-JKN"/>
                                                                         </connections>
@@ -1575,6 +1676,18 @@
                                                                         <state key="normal" title="Ambience" image="More/ambience">
                                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="switchAmbience:" destination="DoQ-eL-T7x" eventType="touchUpInside" id="enG-3Y-DVf"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -1596,6 +1709,12 @@
                                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dC-lG-FT3">
                                                         <rect key="frame" x="109" y="627" width="117" height="22"/>
@@ -1603,6 +1722,12 @@
                                                         <state key="normal" title="@mcmikius" image="More/twitter">
                                                             <color key="titleColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textColorInvert">
+                                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="showTwitter:" destination="gOx-3D-Jp4" eventType="touchUpInside" id="kaB-4c-Alk"/>
                                                         </connections>
@@ -1628,15 +1753,23 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="14"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="invertColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="LhP-aT-UTj" secondAttribute="trailing" id="AgC-8u-xgH"/>
                                             <constraint firstAttribute="bottom" secondItem="LhP-aT-UTj" secondAttribute="bottom" id="Aic-Kj-hVd"/>
+                                            <constraint firstAttribute="trailing" secondItem="zge-c0-h8c" secondAttribute="trailing" id="GJh-Qt-w8a"/>
                                             <constraint firstItem="LhP-aT-UTj" firstAttribute="top" secondItem="yC0-Ul-zeM" secondAttribute="top" id="Iwe-cL-Au3"/>
+                                            <constraint firstItem="zge-c0-h8c" firstAttribute="top" secondItem="yC0-Ul-zeM" secondAttribute="top" id="VhY-P0-VB5"/>
+                                            <constraint firstAttribute="bottom" secondItem="zge-c0-h8c" secondAttribute="bottom" id="XqM-mt-BkX"/>
                                             <constraint firstAttribute="width" constant="600" id="bDH-0D-EJR"/>
                                             <constraint firstItem="LhP-aT-UTj" firstAttribute="leading" secondItem="yC0-Ul-zeM" secondAttribute="leading" id="oB3-8p-Ck8"/>
+                                            <constraint firstItem="zge-c0-h8c" firstAttribute="leading" secondItem="yC0-Ul-zeM" secondAttribute="leading" id="z3l-g3-t41"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1668,9 +1801,13 @@
                                     <constraint firstAttribute="trailing" secondItem="yC0-Ul-zeM" secondAttribute="trailing" constant="20" id="2XL-UD-D1R"/>
                                     <constraint firstItem="yC0-Ul-zeM" firstAttribute="centerX" secondItem="n4C-CQ-pVY" secondAttribute="centerX" id="3Vg-S3-Upu"/>
                                     <constraint firstAttribute="bottom" secondItem="yC0-Ul-zeM" secondAttribute="bottom" constant="20" id="6q9-j0-7Qg"/>
+                                    <constraint firstAttribute="trailing" secondItem="S6Q-Oj-0GB" secondAttribute="trailing" id="DSi-o6-T35"/>
+                                    <constraint firstAttribute="bottom" secondItem="S6Q-Oj-0GB" secondAttribute="bottom" id="GWN-fn-jey"/>
                                     <constraint firstItem="yC0-Ul-zeM" firstAttribute="leading" secondItem="n4C-CQ-pVY" secondAttribute="leading" constant="20" id="IS5-qv-PUx"/>
+                                    <constraint firstItem="S6Q-Oj-0GB" firstAttribute="top" secondItem="n4C-CQ-pVY" secondAttribute="top" id="VnJ-mc-av0"/>
                                     <constraint firstItem="yC0-Ul-zeM" firstAttribute="top" secondItem="n4C-CQ-pVY" secondAttribute="top" constant="20" id="gXB-AD-7eF"/>
                                     <constraint firstItem="yC0-Ul-zeM" firstAttribute="centerY" secondItem="n4C-CQ-pVY" secondAttribute="centerY" id="m82-fb-Pq2"/>
+                                    <constraint firstItem="S6Q-Oj-0GB" firstAttribute="leading" secondItem="n4C-CQ-pVY" secondAttribute="leading" id="rNy-FM-ciO"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1704,9 +1841,12 @@
                         <viewLayoutGuide key="safeArea" id="K5v-KS-uvH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="Tab Bar/more" largeContentSizeImage="Tab Bar/more-accessible" selectedImage="Tab Bar/more-active" id="nma-7V-jjr"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="dialogView" destination="yC0-Ul-zeM" id="4Zc-K9-85t"/>
                         <outlet property="oneProgressLabel" destination="Ect-1E-go0" id="5ap-8P-GBS"/>
                         <outlet property="oneProgressView" destination="y8i-Kb-H0W" id="ZNb-sk-ig0"/>
+                        <outlet property="panToClose" destination="alB-Z7-zrn" id="QcF-r5-0Q4"/>
                         <outlet property="threeProgressLabel" destination="96P-sE-5uW" id="74U-ck-bDh"/>
                         <outlet property="threeProgressView" destination="8G6-Tx-OvJ" id="S0x-Yj-6K2"/>
                         <outlet property="twoProgressLabel" destination="6p3-tc-4ho" id="zCG-NI-GCw"/>
@@ -1715,6 +1855,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ym-8j-6k3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="DoQ-eL-T7x" customClass="AmbienceObject" customModule="Ambience">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="invertLabel" value="Dark Mode"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="regularLabel" value="Off"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="contrastAvailable" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="viewController" destination="gOx-3D-Jp4" id="59y-bl-N3W"/>
+                    </connections>
+                </customObject>
+                <customObject id="alB-Z7-zrn" customClass="InteractionPanToClose" customModule="DesignCodeAppLessons" customModuleProvider="target">
+                    <connections>
+                        <outlet property="dialogView" destination="yC0-Ul-zeM" id="Mxk-Lf-fiD"/>
+                        <outlet property="scrollView" destination="n4C-CQ-pVY" id="QJS-PT-bv2"/>
+                        <outlet property="viewController" destination="gOx-3D-Jp4" id="T7m-4n-pEG"/>
+                        <outlet property="visualEffectView" destination="taG-Rr-JC0" id="qpd-uC-ZWT"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="8102" y="-246"/>
         </scene>
@@ -1727,8 +1885,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="ambience" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
+                        <outlet property="delegate" destination="HCL-kx-v72" id="X0K-Bq-Map"/>
                         <segue destination="i6m-ex-Xvv" kind="relationship" relationship="viewControllers" id="rB0-9p-T0j"/>
                         <segue destination="Q40-aM-HIA" kind="relationship" relationship="viewControllers" id="np6-ow-WFb"/>
                         <segue destination="ljh-Cb-lF7" kind="relationship" relationship="viewControllers" id="lT9-bv-Zrj"/>
@@ -1737,6 +1899,7 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUZ-sJ-8yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="HCL-kx-v72" customClass="PresentMoreViewController" customModule="DesignCodeAppLessons" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="4422" y="-1303"/>
         </scene>

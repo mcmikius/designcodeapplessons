@@ -18,7 +18,15 @@ class MoreViewController: UIViewController {
     @IBOutlet weak var oneProgressLabel: UILabel!
     @IBOutlet weak var twoProgressLabel: UILabel!
     @IBOutlet weak var threeProgressLabel: UILabel!
+    @IBOutlet weak var dialogView: UIView!
+    @IBOutlet var panToClose: InteractionPanToClose!
     
+    
+    weak var previousViewController: UIViewController?
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +48,6 @@ class MoreViewController: UIViewController {
         threeProgressView.animateTo(progresses[2])
     }
     
-    
     // MARK: - IBActions
     
     @IBAction func showSafari(_ sender: UIButton) {
@@ -56,6 +63,16 @@ class MoreViewController: UIViewController {
         let email = "meng@designcode.io"
         if let url = URL(string: "mailto:\(email)") {
             UIApplication.shared.open(url)
+        }
+    }
+    @IBAction func tappedOutsideDialog(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, animations: {
+            
+            self.panToClose.rotateDialogOut()
+            
+        }) { (finished) in
+            
+            self.tabBarController?.selectedViewController = self.previousViewController
         }
     }
     

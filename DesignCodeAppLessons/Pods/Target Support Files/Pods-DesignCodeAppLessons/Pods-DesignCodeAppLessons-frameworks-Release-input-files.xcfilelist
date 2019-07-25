@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-DesignCodeAppLessons/Pods-DesignCodeAppLessons-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Ambience/Ambience.framework
 ${BUILT_PRODUCTS_DIR}/MKRingProgressView/MKRingProgressView.framework
 ${BUILT_PRODUCTS_DIR}/Spring/Spring.framework
 ${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework

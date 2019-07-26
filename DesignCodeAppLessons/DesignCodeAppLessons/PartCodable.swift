@@ -8,38 +8,31 @@
 
 import Foundation
 
-struct Bookmark : Codable {
+struct PartCodable : Codable {
     
-    enum BookmarkType : String {
+    enum PartType : String {
         case text, image, video, code
     }
     
-    var type : BookmarkType?
-    
+    var type : PartType?
+    var id : String
     var typeName : String
-    var chapterNumber : String
-    var sectionTitle : String
-    var partHeading : String
+    var title : String
     var content : String
     
     enum CodingKeys : String, CodingKey {
-        case content
-        case sectionTitle = "section"
-        case partHeading = "part"
+        case content, id, title
         case typeName = "type"
-        case chapterNumber = "chapter"
     }
     
     init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        
+        id = try values.decode(String.self, forKey: .id)
         typeName = try values.decode(String.self, forKey: .typeName)
-        chapterNumber = try values.decode(String.self, forKey: .chapterNumber)
-        sectionTitle = try values.decode(String.self, forKey: .sectionTitle)
-        partHeading = try values.decode(String.self, forKey: .partHeading)
+        title = try values.decode(String.self, forKey: .title)
         content = try values.decode(String.self, forKey: .content)
         
-        type = BookmarkType(rawValue: typeName)
+        type = PartType(rawValue: typeName)
     }
 }

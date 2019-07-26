@@ -26,7 +26,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let section = sections[indexPath.row]
         cell.titleLabel.text = section.title
         cell.captionLabel.text = section.caption
-        cell.coverImageView.image = UIImage(named: section.imageName)
+        cell.coverImageView.image = UIImage(named: section.imageName!)
         cell.layer.transform = animateCell(cellFrame: cell.frame)
         return cell
     }

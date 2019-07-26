@@ -11,8 +11,8 @@ import UIKit
 class BookmarksTableViewController: UITableViewController {
     
     // MARK: - Properties
-    var bookmarks: Array<Bookmark> = ContentAPI.shared.bookmarks
-    var sections: Array<Section> = ContentAPI.shared.sections
+    var bookmarks : Array<Bookmark> { return CoreDataManager.shared.bookmarks }
+    var sections : Array<Section> = CoreDataManager.shared.sections
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -40,11 +40,14 @@ class BookmarksTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookmarkTableViewCell") as! BookmarkTableViewCell
         let bookmark = bookmarks[indexPath.row]
-        cell.chapterTitleLabel.text = bookmark.sectionTitle.uppercased()
-        cell.titleLabel.text = bookmark.partHeading
-        cell.bodyLabel.text = bookmark.content
-        cell.chapterNumberLabel.text = bookmark.chapterNumber
-        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (bookmark.type?.rawValue ?? "text"))
+        let part = bookmark.part!
+        let section = bookmark.part?.section
+        
+        cell.chapterTitleLabel.text = section!.title!.uppercased()
+        cell.titleLabel.text = part.title
+        cell.bodyLabel.text = part.content
+        cell.chapterNumberLabel.text = section!.chapterNumber
+        cell.badgeImageView.image = UIImage(named: "Bookmarks/\(part.type ?? "text")")
 
         return cell
     }
@@ -52,6 +55,7 @@ class BookmarksTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "BookmarksToSection", sender: indexPath)
     }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -61,17 +65,21 @@ class BookmarksTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            tableView.beginUpdates()
+            
+            let bookmark = CoreDataManager.shared.bookmarks[indexPath.row]
+            CoreDataManager.shared.remove(bookmark)
+            
+            tableView.deleteRows(at: [indexPath], with: .top)
+            tableView.endUpdates()
+        }
     }
-    */
+   
 
     /*
     // Override to support rearranging the table view.
@@ -95,7 +103,7 @@ class BookmarksTableViewController: UITableViewController {
         if segue.identifier == "BookmarksToSection", let sectionViewController = segue.destination as? SectionViewController {
             sectionViewController.section = sections[0]
             sectionViewController.sections = sections
-            sectionViewController.indexPath = sender as! IndexPath
+            sectionViewController.indexPath = sender as? IndexPath
         }
     }
 

@@ -18,8 +18,12 @@
 		F303A58622E9BB3D00F086C2 /* Sections.json in Resources */ = {isa = PBXBuildFile; fileRef = F303A58522E9BB3D00F086C2 /* Sections.json */; };
 		F303A58822E9BBBA00F086C2 /* Bookmarks.json in Resources */ = {isa = PBXBuildFile; fileRef = F303A58722E9BBBA00F086C2 /* Bookmarks.json */; };
 		F303A58A22E9BCBF00F086C2 /* ContentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58922E9BCBF00F086C2 /* ContentAPI.swift */; };
-		F303A58C22E9BFDD00F086C2 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58B22E9BFDD00F086C2 /* Section.swift */; };
-		F303A58E22E9C56C00F086C2 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58D22E9C56C00F086C2 /* Bookmark.swift */; };
+		F303A58C22E9BFDD00F086C2 /* SectionCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58B22E9BFDD00F086C2 /* SectionCodable.swift */; };
+		F303A58E22E9C56C00F086C2 /* PartCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F303A58D22E9C56C00F086C2 /* PartCodable.swift */; };
+		F304EB4122EAC9710089946D /* Parts.json in Resources */ = {isa = PBXBuildFile; fileRef = F304EB4022EAC9710089946D /* Parts.json */; };
+		F304EB4322EACA860089946D /* BookmarkCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304EB4222EACA860089946D /* BookmarkCodable.swift */; };
+		F304EB4622EACD600089946D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F304EB4422EACD600089946D /* Model.xcdatamodeld */; };
+		F304EB4822EACFB40089946D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304EB4722EACFB40089946D /* CoreDataManager.swift */; };
 		F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */; };
 		F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */; };
 		F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */; };
@@ -41,7 +45,6 @@
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
 		F3DF2A1D22DF0FB90025684E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */; };
 		F3DF2A2022DF0FB90025684E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DF2A1E22DF0FB90025684E /* Main.storyboard */; };
-		F3DF2A2322DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A2122DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld */; };
 		F3DF2A2522DF0FBA0025684E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DF2A2422DF0FBA0025684E /* Assets.xcassets */; };
 		F3DF2A2822DF0FBA0025684E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DF2A2622DF0FBA0025684E /* LaunchScreen.storyboard */; };
 		F3F198C122E8375A00AEB874 /* MKRingProgressView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F198C022E8375A00AEB874 /* MKRingProgressView+extension.swift */; };
@@ -79,8 +82,12 @@
 		F303A58522E9BB3D00F086C2 /* Sections.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sections.json; sourceTree = "<group>"; };
 		F303A58722E9BBBA00F086C2 /* Bookmarks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bookmarks.json; sourceTree = "<group>"; };
 		F303A58922E9BCBF00F086C2 /* ContentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAPI.swift; sourceTree = "<group>"; };
-		F303A58B22E9BFDD00F086C2 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		F303A58D22E9C56C00F086C2 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		F303A58B22E9BFDD00F086C2 /* SectionCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCodable.swift; sourceTree = "<group>"; };
+		F303A58D22E9C56C00F086C2 /* PartCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCodable.swift; sourceTree = "<group>"; };
+		F304EB4022EAC9710089946D /* Parts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Parts.json; sourceTree = "<group>"; };
+		F304EB4222EACA860089946D /* BookmarkCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCodable.swift; sourceTree = "<group>"; };
+		F304EB4522EACD600089946D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F304EB4722EACFB40089946D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +110,6 @@
 		F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3DF2A1F22DF0FB90025684E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3DF2A2222DF0FB90025684E /* DesignCodeAppLessons.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesignCodeAppLessons.xcdatamodel; sourceTree = "<group>"; };
 		F3DF2A2422DF0FBA0025684E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3DF2A2722DF0FBA0025684E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3DF2A2922DF0FBA0025684E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,10 +205,12 @@
 				F3F198C222E83D1900AEB874 /* ExerciseTableViewCell.swift */,
 				F3F198C422E83DBB00AEB874 /* ExerciseTableViewCell+extension.swift */,
 				F3019C8E22E087FE0043F30E /* Data.swift */,
-				F303A58B22E9BFDD00F086C2 /* Section.swift */,
-				F303A58D22E9C56C00F086C2 /* Bookmark.swift */,
+				F303A58B22E9BFDD00F086C2 /* SectionCodable.swift */,
+				F303A58D22E9C56C00F086C2 /* PartCodable.swift */,
+				F304EB4222EACA860089946D /* BookmarkCodable.swift */,
 				F303A58522E9BB3D00F086C2 /* Sections.json */,
 				F303A58722E9BBBA00F086C2 /* Bookmarks.json */,
+				F304EB4022EAC9710089946D /* Parts.json */,
 				F303A58922E9BCBF00F086C2 /* ContentAPI.swift */,
 				F3DF2A1E22DF0FB90025684E /* Main.storyboard */,
 				F3F198CA22E87FE700AEB874 /* QuestionCollectionViewCell.swift */,
@@ -214,10 +222,11 @@
 				F34AFA0922E99BE000A2D9CB /* PresentMoreViewController.swift */,
 				F34AFA0B22E99D2500A2D9CB /* PresentMoreViewController+extension.swift */,
 				F34AFA0D22E99E1500A2D9CB /* CATransform3D+extension.swift */,
+				F304EB4722EACFB40089946D /* CoreDataManager.swift */,
 				F3DF2A2422DF0FBA0025684E /* Assets.xcassets */,
 				F3DF2A2622DF0FBA0025684E /* LaunchScreen.storyboard */,
 				F3DF2A2922DF0FBA0025684E /* Info.plist */,
-				F3DF2A2122DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld */,
+				F304EB4422EACD600089946D /* Model.xcdatamodeld */,
 			);
 			path = DesignCodeAppLessons;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				F3DF2A2522DF0FBA0025684E /* Assets.xcassets in Resources */,
 				F303A58622E9BB3D00F086C2 /* Sections.json in Resources */,
 				F3DF2A2022DF0FB90025684E /* Main.storyboard in Resources */,
+				F304EB4122EAC9710089946D /* Parts.json in Resources */,
 				F3F198E422E8BC6E00AEB874 /* WebViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +408,7 @@
 				F3F198C922E8407600AEB874 /* ExerciseDialogViewController.swift in Sources */,
 				F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */,
 				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
+				F304EB4322EACA860089946D /* BookmarkCodable.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
 				F303A58A22E9BCBF00F086C2 /* ContentAPI.swift in Sources */,
 				F34AFA0E22E99E1500A2D9CB /* CATransform3D+extension.swift in Sources */,
@@ -406,7 +417,6 @@
 				F3155D1D22E61C1300BD1B64 /* InteractionPanToClose+extension.swift in Sources */,
 				F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */,
 				F3F198D922E8AE0900AEB874 /* BenefitsViewController.swift in Sources */,
-				F3DF2A2322DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld in Sources */,
 				F30AEEC322E584B100B9FA2D /* BookmarksTableViewController.swift in Sources */,
 				F3C4F2D122E75C040039D352 /* LoginViewController.swift in Sources */,
 				F3019C9522E0D30D0043F30E /* TestimonialCollectionViewCell.swift in Sources */,
@@ -417,16 +427,18 @@
 				F30AEEC522E58B4600B9FA2D /* BookmarkTableViewCell.swift in Sources */,
 				F3F198CF22E8869B00AEB874 /* ExerciseTableViewCellDelegate.swift in Sources */,
 				F3019C8D22E06C3C0043F30E /* HomeViewController+extension.swift in Sources */,
+				F304EB4822EACFB40089946D /* CoreDataManager.swift in Sources */,
 				F3F198D522E88A9500AEB874 /* ScoreCellDelegate.swift in Sources */,
 				F3F198DB22E8B04000AEB874 /* BenefitCollectionViewCell.swift in Sources */,
 				F39CF51E22E7502500B0B95C /* DiscountViewController.swift in Sources */,
 				F3F198C122E8375A00AEB874 /* MKRingProgressView+extension.swift in Sources */,
+				F304EB4622EACD600089946D /* Model.xcdatamodeld in Sources */,
 				F39CF52022E7513D00B0B95C /* UILabel+extension.swift in Sources */,
 				F3F198C522E83DBB00AEB874 /* ExerciseTableViewCell+extension.swift in Sources */,
-				F303A58E22E9C56C00F086C2 /* Bookmark.swift in Sources */,
+				F303A58E22E9C56C00F086C2 /* PartCodable.swift in Sources */,
 				F3F198C322E83D1900AEB874 /* ExerciseTableViewCell.swift in Sources */,
 				F35A16C622E64C280093E879 /* PurchaseViewController.swift in Sources */,
-				F303A58C22E9BFDD00F086C2 /* Section.swift in Sources */,
+				F303A58C22E9BFDD00F086C2 /* SectionCodable.swift in Sources */,
 				F3F198D322E8897000AEB874 /* ScoreCollectionViewCell.swift in Sources */,
 				F333587A22E5C8D10002B8C1 /* UIViewController+extension.swift in Sources */,
 				F3F198CD22E8838C00AEB874 /* QuestionCellDelegate.swift in Sources */,
@@ -638,13 +650,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F3DF2A2122DF0FB90025684E /* DesignCodeAppLessons.xcdatamodeld */ = {
+		F304EB4422EACD600089946D /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F3DF2A2222DF0FB90025684E /* DesignCodeAppLessons.xcdatamodel */,
+				F304EB4522EACD600089946D /* Model.xcdatamodel */,
 			);
-			currentVersion = F3DF2A2222DF0FB90025684E /* DesignCodeAppLessons.xcdatamodel */;
-			path = DesignCodeAppLessons.xcdatamodeld;
+			currentVersion = F304EB4522EACD600089946D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -11,36 +11,29 @@ import Foundation
 class ContentAPI {
     static var shared: ContentAPI = ContentAPI()
     
-    lazy var sections: Array<Section> = {
-        guard let path = Bundle.main.path(forResource: "Sections", ofType: "json") else { return [] }
-        let url = URL(fileURLWithPath: path)
-        guard let data = try? Data(contentsOf: url) else { return [] }
-        do {
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .secondsSince1970
-            let sections = try decoder.decode(Array<Section>.self, from: data)
-            return sections
-        } catch {
-            print(error)
-        }
-        return []
+    lazy var bookmarks : Array<BookmarkCodable> = {
+        return load(into: Array<BookmarkCodable>.self, resource: "Bookmarks") ?? []
     }()
     
-    lazy var bookmarks : Array<Bookmark> = {
-        
-        guard let path = Bundle.main.path(forResource: "Bookmarks", ofType: "json") else { return [] }
-        let url = URL(fileURLWithPath: path)
-        
-        guard let data = try? Data(contentsOf: url) else { return [] }
-        
-        do {
-            let decoder = JSONDecoder()
-            let bookmarks = try decoder.decode(Array<Bookmark>.self, from: data)
-            return bookmarks
-        } catch {
-            print(error)
-        }
-        
-        return []
+    lazy var parts : Array<PartCodable> = {
+        return load(into: Array<PartCodable>.self, resource: "Parts") ?? []
     }()
+    
+    lazy var sections : Array<SectionCodable> = {
+        return load(into: Array<SectionCodable>.self, resource: "Sections") ?? []
+    }()
+    
+    func load<T : Codable>(into swiftType : T.Type, resource : String, ofType type : String = "json") -> T? {
+        
+        let path = Bundle.main.path(forResource: resource, ofType: type)
+        let url = URL(fileURLWithPath: path!)
+        
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .secondsSince1970
+        
+        return try! decoder.decode(swiftType.self, from: data)
+    }
 }

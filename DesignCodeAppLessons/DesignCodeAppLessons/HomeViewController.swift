@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
-    var sections: Array<Section> = ContentAPI.shared.sections
+    var sections : Array<Section> = CoreDataManager.shared.sections
     var isStatusBarHidden = false
     let presentSectionViewController = PresentSectionViewController()
     

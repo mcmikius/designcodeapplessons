@@ -8,16 +8,14 @@
 
 import Foundation
 
-struct Section : Codable {
+struct SectionCodable : Codable {
+    
+    var id : String
     var title: String
     var caption: String
     var body: String
     var imageName: String
     var publishDate: Date
+    var chapterNumber : String
     
-    enum CodingKeys: String, CodingKey {
-        case title, caption, body
-        case imageName = "image"
-        case publishDate = "publish_date"
-    }
 }

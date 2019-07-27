@@ -40,17 +40,18 @@ class BookmarksTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BookmarkTableViewCell") as! BookmarkTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bookmarkCell") as! BookmarkTableViewCell
+        
         let bookmark = bookmarks[indexPath.row]
         let section = bookmark.section!
         let part = bookmark.part!
         
         cell.chapterTitleLabel.text = section.title.uppercased()
         cell.titleLabel.text = part.title
-        cell.bodyLabel.text = part.content
-        cell.chapterNumberLabel.text = section.chapterNumber
-        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (part.typeName))
-
+        cell.bodyLabel.text = part.body
+        cell.chapterNumberLabel.text = section.chapterId
+        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + "text")
+        
         return cell
     }
     

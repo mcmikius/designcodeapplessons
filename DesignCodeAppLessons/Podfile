@@ -12,6 +12,6 @@ target 'DesignCodeAppLessons' do
   pod 'MKRingProgressView'
   pod 'Ambience'
   pod 'RealmSwift'
-  pod 'Kingfisher'
+  pod 'Kingfisher', '~> 4.6'
 
 end

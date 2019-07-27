@@ -14,7 +14,7 @@ class PresentSectionViewController: NSObject, UIViewControllerAnimatedTransition
     var cellTransform: CATransform3D!
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.6
+        return 5
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

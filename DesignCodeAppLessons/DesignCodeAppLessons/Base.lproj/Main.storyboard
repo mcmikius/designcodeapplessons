@@ -310,7 +310,7 @@
                                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionCollectionViewCell" id="Q3d-jC-ZDi" customClass="SectionCollectionViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="Q3d-jC-ZDi" customClass="SectionCollectionViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -391,9 +391,9 @@
                                                         </constraints>
                                                         <size key="customSize" width="304" height="248"/>
                                                         <connections>
-                                                            <outlet property="captionLabel" destination="0LJ-E5-6wz" id="euc-g6-X2r"/>
-                                                            <outlet property="coverImageView" destination="ons-hm-vU7" id="bNX-jY-xvc"/>
-                                                            <outlet property="titleLabel" destination="ysv-SY-mJu" id="9jb-93-S63"/>
+                                                            <outlet property="captionLabel" destination="0LJ-E5-6wz" id="OY8-xL-qsB"/>
+                                                            <outlet property="coverImageView" destination="ons-hm-vU7" id="S3y-0F-kcM"/>
+                                                            <outlet property="titleLabel" destination="ysv-SY-mJu" id="tUb-L5-G3u"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -552,7 +552,7 @@
                                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SectionCollectionViewCell" id="lBK-ER-Qvm" customClass="SectionCollectionViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCell" id="lBK-ER-Qvm" customClass="SectionCollectionViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="0.0" width="304" height="248"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -633,9 +633,9 @@
                                                         </constraints>
                                                         <size key="customSize" width="304" height="248"/>
                                                         <connections>
-                                                            <outlet property="captionLabel" destination="5nX-DB-1s0" id="xQU-GF-AkI"/>
-                                                            <outlet property="coverImageView" destination="d4J-ba-9ys" id="9GO-Pq-uKM"/>
-                                                            <outlet property="titleLabel" destination="Ycu-er-01y" id="wBW-0f-Dfv"/>
+                                                            <outlet property="captionLabel" destination="5nX-DB-1s0" id="fG2-rh-foc"/>
+                                                            <outlet property="coverImageView" destination="d4J-ba-9ys" id="rY5-qn-gsT"/>
+                                                            <outlet property="titleLabel" destination="Ycu-er-01y" id="1OO-Uf-fwb"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -690,7 +690,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookmarkTableViewCell" rowHeight="125" id="Qhz-g3-EUv" customClass="BookmarkTableViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookmarkCell" rowHeight="125" id="Qhz-g3-EUv" customClass="BookmarkTableViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qhz-g3-EUv" id="NLb-pn-FJs">
@@ -776,11 +776,11 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="70" minY="0.0" maxX="16" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="badgeImageView" destination="u2v-lq-ZpL" id="mby-JK-YMs"/>
-                                    <outlet property="bodyLabel" destination="pWS-Gf-GbO" id="rgk-VF-8pL"/>
-                                    <outlet property="chapterNumberLabel" destination="xps-Rb-rWt" id="Cr4-Uw-3Vw"/>
-                                    <outlet property="chapterTitleLabel" destination="hdf-ax-Zjh" id="XX0-UI-Yie"/>
-                                    <outlet property="titleLabel" destination="8a7-Hc-QwE" id="l4J-Df-S3M"/>
+                                    <outlet property="badgeImageView" destination="u2v-lq-ZpL" id="9eB-WW-BbX"/>
+                                    <outlet property="bodyLabel" destination="pWS-Gf-GbO" id="xfY-77-YKt"/>
+                                    <outlet property="chapterNumberLabel" destination="xps-Rb-rWt" id="6Db-5c-uek"/>
+                                    <outlet property="chapterTitleLabel" destination="hdf-ax-Zjh" id="OZu-w7-yZ8"/>
+                                    <outlet property="titleLabel" destination="8a7-Hc-QwE" id="hQs-cP-C4R"/>
                                     <outletCollection property="regularContraints" destination="7UI-DU-YCJ" collectionClass="NSMutableArray" id="dQy-Gs-bBB"/>
                                     <outletCollection property="accessibilityConstraints" destination="0wq-qE-btd" collectionClass="NSMutableArray" id="Hfr-MN-mF9"/>
                                     <outletCollection property="regularContraints" destination="97G-1l-V1J" collectionClass="NSMutableArray" id="e8l-I2-N9R"/>

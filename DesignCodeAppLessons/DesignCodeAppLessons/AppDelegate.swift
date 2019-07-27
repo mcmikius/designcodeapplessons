@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .regular(lower: 0.1, upper: 1.0),
             .contrast(lower: nil),
             ])
-//        RealmManager.loadFromData()
+        RealmManager.updateContent()
         return true
     }
 

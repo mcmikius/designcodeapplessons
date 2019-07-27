@@ -20,6 +20,7 @@
 		F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */; };
 		F3155D1B22E6195A00BD1B64 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1A22E6195A00BD1B64 /* InteractionPanToClose.swift */; };
 		F3155D1D22E61C1300BD1B64 /* InteractionPanToClose+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3155D1C22E61C1300BD1B64 /* InteractionPanToClose+extension.swift */; };
+		F31938C522EC54A3006EC913 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31938C422EC54A3006EC913 /* ChapterViewController.swift */; };
 		F333587322E5924C0002B8C1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587222E5924C0002B8C1 /* WebViewController.swift */; };
 		F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333587422E59B3C0002B8C1 /* MoreViewController.swift */; };
 		F333587822E5B8C00002B8C1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333587722E5B8C00002B8C1 /* WebKit.framework */; };
@@ -32,7 +33,6 @@
 		F39CF51E22E7502500B0B95C /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39CF51D22E7502500B0B95C /* DiscountViewController.swift */; };
 		F39CF52022E7513D00B0B95C /* UILabel+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */; };
 		F3B72FFA22E2611D00D46BA3 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */; };
-		F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */; };
 		F3C4F2D122E75C040039D352 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4F2D022E75C040039D352 /* LoginViewController.swift */; };
 		F3DF2A1B22DF0FB90025684E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */; };
 		F3DF2A1D22DF0FB90025684E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DF2A1C22DF0FB90025684E /* HomeViewController.swift */; };
@@ -82,6 +82,7 @@
 		F3155D1822E5D5BF00BD1B64 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
 		F3155D1A22E6195A00BD1B64 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
 		F3155D1C22E61C1300BD1B64 /* InteractionPanToClose+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InteractionPanToClose+extension.swift"; sourceTree = "<group>"; };
+		F31938C422EC54A3006EC913 /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
 		F333587222E5924C0002B8C1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F333587422E59B3C0002B8C1 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		F333587722E5B8C00002B8C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -94,7 +95,6 @@
 		F39CF51D22E7502500B0B95C /* DiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountViewController.swift; sourceTree = "<group>"; };
 		F39CF51F22E7513D00B0B95C /* UILabel+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+extension.swift"; sourceTree = "<group>"; };
 		F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
-		F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChaptersViewController+extension.swift"; sourceTree = "<group>"; };
 		F3C4F2D022E75C040039D352 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3DF2A1722DF0FB90025684E /* DesignCodeAppLessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeAppLessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DF2A1A22DF0FB90025684E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				F3019C8C22E06C3C0043F30E /* HomeViewController+extension.swift */,
 				F3E0904022EC454D00FDA884 /* SectionCollectionViewCell.swift */,
 				F3B72FF922E2611D00D46BA3 /* ChaptersViewController.swift */,
-				F3B72FFB22E261BF00D46BA3 /* ChaptersViewController+extension.swift */,
+				F31938C422EC54A3006EC913 /* ChapterViewController.swift */,
 				F30AEEC222E584B100B9FA2D /* BookmarksTableViewController.swift */,
 				F30AEEC422E58B4600B9FA2D /* BookmarkTableViewCell.swift */,
 				F333587422E59B3C0002B8C1 /* MoreViewController.swift */,
@@ -407,12 +407,12 @@
 				F3019C9722E0D4C80043F30E /* TestimonialViewController+extension.swift in Sources */,
 				F3F198C922E8407600AEB874 /* ExerciseDialogViewController.swift in Sources */,
 				F3019C9322E0D2D10043F30E /* TestimonialViewController.swift in Sources */,
+				F31938C522EC54A3006EC913 /* ChapterViewController.swift in Sources */,
 				F333587522E59B3C0002B8C1 /* MoreViewController.swift in Sources */,
 				F3019C8F22E087FE0043F30E /* Data.swift in Sources */,
 				F303A58A22E9BCBF00F086C2 /* ContentAPI.swift in Sources */,
 				F34AFA0E22E99E1500A2D9CB /* CATransform3D+extension.swift in Sources */,
 				F37FFD8C22EC21DD00097097 /* RealmManager.swift in Sources */,
-				F3B72FFC22E261BF00D46BA3 /* ChaptersViewController+extension.swift in Sources */,
 				F3F198CB22E87FE700AEB874 /* QuestionCollectionViewCell.swift in Sources */,
 				F3155D1D22E61C1300BD1B64 /* InteractionPanToClose+extension.swift in Sources */,
 				F3155D1922E5D5BF00BD1B64 /* PresentSectionViewController.swift in Sources */,

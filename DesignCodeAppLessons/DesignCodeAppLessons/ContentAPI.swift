@@ -8,30 +8,30 @@
 
 import RealmSwift
 
-struct Content: Decodable {
-    var chapters: Array<Chapter>
-    var version: Int
+struct Content : Decodable {
+    var chapters : Array<Chapter>
+    var version : Int
     
-    enum CodingKeys: String, CodingKey {
+    enum CodingKeys : String, CodingKey {
         case version
         case chapters = "content"
     }
 }
 
-extension Content: Resource {
+extension Content : Resource {
     
-    static var path: String { return "content" }
-    static var httpMethod: HTTPMethod { return .get }
-    static var body: Data? { return nil }
+    static var path : String { return "content" }
+    static var httpMethod : HTTPMethod { return .get }
+    static var body : Data? { return nil }
 }
 
-class Chapter: Object, Decodable {
-    @objc dynamic var id: String = ""
-    @objc dynamic var title: String = ""
+class Chapter : Object, Decodable {
+    @objc dynamic var id : String = ""
+    @objc dynamic var title : String = ""
     
-    var sections: List<Section> = List<Section>()
+    var sections : List<Section> = List<Section>()
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys : String, CodingKey {
         case id, title, sections
     }
     
@@ -52,32 +52,32 @@ class Chapter: Object, Decodable {
     }
 }
 
-class Bookmark: Object, Decodable {
+class Bookmark : Object, Decodable {
     
-    @objc dynamic var section: Section?
-    @objc dynamic var sectionId: String = ""
+    @objc dynamic var section : Section?
+    @objc dynamic var sectionId : String = ""
     
-    @objc dynamic var part: Part?
-    @objc dynamic var partId: String = ""
+    @objc dynamic var part : Part?
+    @objc dynamic var partId : String = ""
 }
 
-class Section: Object, Decodable {
+class Section : Object, Decodable {
     
-    @objc dynamic var id: String = ""
-    @objc dynamic var chapterId: String = ""
-    @objc dynamic var order: String = ""
-    @objc dynamic var slug: String = ""
-    @objc dynamic var title: String = ""
-    @objc dynamic var caption: String = ""
-    @objc dynamic var body: String = ""
+    @objc dynamic var id : String = ""
+    @objc dynamic var chapterId : String = ""
+    @objc dynamic var order : String = ""
+    @objc dynamic var slug : String = ""
+    @objc dynamic var title : String = ""
+    @objc dynamic var caption : String = ""
+    @objc dynamic var body : String = ""
     
-    @objc dynamic var image: String = ""
+    @objc dynamic var image : String = ""
     
-    var imageURL: URL? { return URL(string: image) }
+    var imageURL : URL? { return URL(string: image) }
     
-    var parts: List<Part> = List<Part>()
+    var parts : List<Part> = List<Part>()
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys : String, CodingKey {
         case id, title, caption, body, chapterId, order, slug, image
         case parts = "contents"
     }
@@ -102,40 +102,40 @@ class Section: Object, Decodable {
     }
 }
 
-extension List: Decodable {
+extension List : Decodable {
     public convenience init(from decoder: Decoder) throws {
         self.init()
     }
 }
 
-enum PartType: String {
+enum PartType : String {
     case text, image, video, code
 }
 
-class Part: Object, Decodable {
+class Part : Object, Decodable {
     
-    @objc dynamic var id: String = ""
-    @objc dynamic var sectionId: String = ""
-    @objc dynamic var order: String = ""
-    @objc dynamic var title: String = ""
-    @objc dynamic var subhead: String = ""
-    @objc dynamic var body: String = ""
+    @objc dynamic var id : String = ""
+    @objc dynamic var sectionId : String = ""
+    @objc dynamic var order : String = ""
+    @objc dynamic var title : String = ""
+    @objc dynamic var subhead : String = ""
+    @objc dynamic var body : String = ""
     
-    @objc dynamic var image: String = ""
+    @objc dynamic var image : String = ""
     
-    var imageURL: URL? { return URL(string: image) }
+    var imageURL : URL? { return URL(string: image) }
     
-    @objc dynamic var imageHeight: String = ""
-    @objc dynamic var imageWidth: String = ""
+    @objc dynamic var imageHeight : String = ""
+    @objc dynamic var imageWidth : String = ""
     
     override static func primaryKey() -> String? { return "id" }
 }
 
 class ContentAPI {
     
-    static var shared: ContentAPI = ContentAPI()
+    static var shared : ContentAPI = ContentAPI()
     
-    lazy var bookmarks: Array<Bookmark> = []
+    lazy var bookmarks : Array<Bookmark> = []
     
     static let baseURL = URL(string: "http://localhost:3000")!
 }

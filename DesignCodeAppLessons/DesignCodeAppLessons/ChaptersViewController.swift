@@ -11,29 +11,63 @@ import RealmSwift
 
 class ChaptersViewController: UIViewController {
     
-    // MARK: - IBOutlets
-
-    @IBOutlet weak var chapterOneCollectionView: UICollectionView!
-    
-    // MARK: - Properties
-    var sections: Results<Section> { return RealmManager.sections }
-    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        chapterOneCollectionView.delegate = self
-        chapterOneCollectionView.dataSource = self
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        
+        searchController.searchBar.placeholder = "Search for titles, terms and content"
+        searchController.obscuresBackgroundDuringPresentation = false
+        
+        definesPresentationContext = true
+        
+        searchController.searchBar.sizeToFit()
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    var chapterViewController : ChapterViewController?
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "Embed Chapter":
+            
+            let destination = segue.destination as! ChapterViewController
+            
+            destination.chapter = RealmManager.chapter(withId: "1")
+            destination.view.translatesAutoresizingMaskIntoConstraints = false
+            
+            chapterViewController = destination
+            
+        default: break
+        }
     }
-    */
+}
 
+extension ChaptersViewController : UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) { return }
+}
+
+extension ChaptersViewController : UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        chapterViewController?.searchText = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(true, animated: true)
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.setShowsCancelButton(false, animated: true)
+    }
 }

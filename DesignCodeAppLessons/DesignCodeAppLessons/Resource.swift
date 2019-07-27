@@ -10,13 +10,13 @@ import Foundation
 
 struct Response<T : Decodable> : Decodable {
     
-    var message: String
-    var status: String
-    var statusCode: String
-    var data: T
+    var message : String
+    var status : String
+    var statusCode : String
+    var data : T
 }
 
-enum HTTPMethod: String {
+enum HTTPMethod : String {
     
     case get    = "GET"
     case post   = "POST"
@@ -25,15 +25,15 @@ enum HTTPMethod: String {
 
 protocol Resource {
     
-    static var path: String { get }
-    static var httpMethod: HTTPMethod { get }
-    static var body: Data? { get }
+    static var path : String { get }
+    static var httpMethod : HTTPMethod { get }
+    static var body : Data? { get }
 }
 
 extension Resource {
     
     @discardableResult
-    static func load<T: Resource & Decodable>(_ completion: @escaping (Response<T>) -> Void) -> URLSessionDataTask {
+    static func load<T : Resource & Decodable>(_ completion : @escaping (Response<T>) -> Void) -> URLSessionDataTask {
         
         let url = ContentAPI.baseURL.appendingPathComponent(path)
         var request = URLRequest(url: url)
@@ -66,4 +66,3 @@ extension Resource {
         return task
     }
 }
-

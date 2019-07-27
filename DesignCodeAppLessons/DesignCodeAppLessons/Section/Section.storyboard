@@ -13,7 +13,7 @@
         <!--Section View Controller-->
         <scene sceneID="GRa-g1-xQY">
             <objects>
-                <viewController storyboardIdentifier="SectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XWJ-dp-nF4" customClass="SectionViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Section" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XWJ-dp-nF4" customClass="SectionViewController" customModule="DesignCodeAppLessons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FJr-pY-8iE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="920"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Body" rowHeight="100" id="rBM-Lq-dby" customClass="SectionBodyTableViewCell" customModule="DesignCodeApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Body" rowHeight="100" id="rBM-Lq-dby" customClass="SectionBodyTableViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="448" width="375" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBM-Lq-dby" id="smP-No-scS">
@@ -69,7 +69,7 @@
                                                     <outlet property="textView" destination="wue-Lg-lpG" id="rgT-kv-xsc"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Media" rowHeight="354" id="ab9-K4-tVt" customClass="SectionMediaTableViewCell" customModule="DesignCodeApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Media" rowHeight="354" id="ab9-K4-tVt" customClass="SectionMediaTableViewCell" customModule="DesignCodeAppLessons" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="548" width="375" height="354"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ab9-K4-tVt" id="Sym-7R-9pP">

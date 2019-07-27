@@ -1,39 +1,96 @@
 //
-//  ChaptersViewController+extension.swift
+//  ChapterViewController.swift
 //  DesignCodeAppLessons
 //
-//  Created by Mykhailo Bondarenko on 7/19/19.
+//  Created by Mykhailo Bondarenko on 7/27/19.
 //  Copyright © 2019 Mykhailo Bondarenko. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import RealmSwift
 
-extension ChaptersViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+class ChapterViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    weak var delegate : ChapterCollectionDelegate?
+    
+    var chapter : Chapter?
+    
+    var searchText : String = "" {
+        didSet { collectionView.reloadData() }
+    }
+    
+    var sections : Results<Section>!
+}
+
+extension ChapterViewController : UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if searchText.count == 0 {
+            
+            sections = RealmManager
+                .realm
+                .objects(Section.self)
+                .sorted(byKeyPath: "order")
+            
+            titleLabel.text = "CHAPTER \(chapter!.id): \(sections.count) SECTIONS"
+        } else {
+            
+            sections = RealmManager
+                .realm
+                .objects(Section.self)
+                .sorted(byKeyPath: "order")
+                .filter("title CONTAINS[c] %@ OR caption CONTAINS[c] %@ OR body CONTAINS %@", searchText, searchText, searchText)
+        }
+        
         return sections.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionCell", for: indexPath) as! SectionCollectionViewCell
+        
         let section = sections[indexPath.row]
+        
         cell.titleLabel.text = section.title
         cell.captionLabel.text = section.caption
         cell.coverImageView.setImage(from: section.imageURL!)
+        
         cell.layer.transform = animateCell(cellFrame: cell.frame)
+        
         return cell
     }
-    
-    
 }
 
-extension ChaptersViewController: UIScrollViewDelegate {
+protocol ChapterCollectionDelegate : class {
+    
+    func didTap(cell : SectionCollectionViewCell, on collectionView : UICollectionView, for section : Section, with transform : CATransform3D)
+}
+
+extension ChapterViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! SectionCollectionViewCell
+        let transform = animateCell(cellFrame: cell.frame)
+        let section = chapter!.sections[indexPath.row]
+        
+        delegate?.didTap(cell: cell, on: collectionView, for: section, with: transform)
+    }
+}
+
+extension ChapterViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
         if let collectionView = scrollView as? UICollectionView {
             for cell in collectionView.visibleCells as! [SectionCollectionViewCell] {
                 let indexPath = collectionView.indexPath(for: cell)!
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
+                
                 let translationX = cellFrame.origin.x / 5
                 cell.coverImageView.transform = CGAffineTransform(translationX: translationX, y: 0)
                 
@@ -43,7 +100,6 @@ extension ChaptersViewController: UIScrollViewDelegate {
     }
     
     func animateCell(cellFrame: CGRect) -> CATransform3D {
-        
         let angleFromX = Double((-cellFrame.origin.x) / 10)
         let angle = CGFloat((angleFromX * Double.pi) / 180.0)
         var transform = CATransform3DIdentity

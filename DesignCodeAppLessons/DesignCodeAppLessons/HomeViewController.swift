@@ -21,11 +21,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var heroView: UIView!
     @IBOutlet weak var bookView: UIView!
-    @IBOutlet weak var chapterCollectionView: UICollectionView!
     
     // MARK: - Properties
     
-    var sections: Results<Section> { return RealmManager.sections }
     var isStatusBarHidden = false
     let presentSectionViewController = PresentSectionViewController()
     
@@ -35,8 +33,6 @@ class HomeViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
         
         scrollView.delegate = self
-        chapterCollectionView.delegate = self
-        chapterCollectionView.dataSource = self
         
         titleLabel.alpha = 0
         deviceImageView.alpha = 0
@@ -83,26 +79,22 @@ class HomeViewController: UIViewController {
         
         guard let identifier = segue.identifier else { return }
         switch identifier {
+        case "Embed Chapter":
+            
+            let destination = segue.destination as! ChapterViewController
+            
+            destination.chapter = RealmManager.chapter(withId: "1")
+            destination.view.translatesAutoresizingMaskIntoConstraints = false
         case "HomeToSection":
-            let destinationViewController = segue.destination as! SectionViewController
-            let indexPath = sender as! IndexPath
-            let section = sections[indexPath.row]
-            destinationViewController.section = section
-            destinationViewController.sections = sections
-            destinationViewController.indexPath = indexPath
-            destinationViewController.transitioningDelegate = self
-            
-            let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)!
-            let cellFrame = chapterCollectionView.convert(attributes.frame, to: view)
-            
-            presentSectionViewController.cellFrame = cellFrame
-            presentSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
+            let destination = segue.destination as! SectionViewController
+            let section = sender as! Section
+            destination.section = section
+            destination.transitioningDelegate = self
             
             isStatusBarHidden = true
-            UIView.animate(withDuration: 0.5) {
+            UIView.animate(withDuration: 0.5, animations: {
                 self.setNeedsStatusBarAppearanceUpdate()
-            }
-            
+            })
         case "Benefits":
             segue.destination.view.translatesAutoresizingMaskIntoConstraints = false
             
@@ -122,6 +114,9 @@ class HomeViewController: UIViewController {
         present(playerController, animated: true) {
             player.play()
         }
+    }
+    @IBAction func navigationBarBuyButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "Home to Purchase", sender: nil)
     }
 }
 

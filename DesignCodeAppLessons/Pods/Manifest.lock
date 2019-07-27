@@ -1,5 +1,6 @@
 PODS:
   - Ambience (0.1.2)
+  - Kingfisher (5.7.0)
   - MKRingProgressView (2.2.2)
   - Realm (3.17.1):
     - Realm/Headers (= 3.17.1)
@@ -11,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Ambience
+  - Kingfisher
   - MKRingProgressView
   - RealmSwift
   - Spring
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Ambience
+    - Kingfisher
     - MKRingProgressView
     - Realm
     - RealmSwift
@@ -27,12 +30,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Ambience: 50ef53807961e96584a01f908283e25366f9899e
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   MKRingProgressView: b558eff66a648bd77b11f61cfc5603ae96008077
   Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
   RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: 423e6843d7579a0a2c740d283b718e4162427ae5
+PODFILE CHECKSUM: 9a556f33dd6a9639585ff108e02cd168fe09da4a
 
 COCOAPODS: 1.7.5

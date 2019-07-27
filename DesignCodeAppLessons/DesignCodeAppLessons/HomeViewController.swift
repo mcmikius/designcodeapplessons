@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import RealmSwift
 
 class HomeViewController: UIViewController {
 
@@ -24,7 +25,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
-    var sections: Array<Section> = ContentAPI.shared.sections
+    var sections: Results<Section> { return RealmManager.sections }
     var isStatusBarHidden = false
     let presentSectionViewController = PresentSectionViewController()
     

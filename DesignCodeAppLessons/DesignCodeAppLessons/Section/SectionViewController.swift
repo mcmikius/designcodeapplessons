@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SectionViewController: UIViewController {
 
@@ -25,7 +26,7 @@ class SectionViewController: UIViewController {
     // MARK: - Properties
     
     var section: Section!
-    var sections: Array<Section>!
+    var sections: Results<Section>!
     var indexPath: IndexPath!
     
     override func viewDidLoad() {

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BookmarksTableViewController: UITableViewController {
     
     // MARK: - Properties
-    var bookmarks: Array<Bookmark> = ContentAPI.shared.bookmarks
-    var sections: Array<Section> = ContentAPI.shared.sections
+    
+    var bookmarks: Results<Bookmark> { return RealmManager.bookmarks }
+    var sections: Results<Section> { return RealmManager.sections }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -40,11 +42,14 @@ class BookmarksTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookmarkTableViewCell") as! BookmarkTableViewCell
         let bookmark = bookmarks[indexPath.row]
-        cell.chapterTitleLabel.text = bookmark.sectionTitle.uppercased()
-        cell.titleLabel.text = bookmark.partHeading
-        cell.bodyLabel.text = bookmark.content
-        cell.chapterNumberLabel.text = bookmark.chapterNumber
-        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (bookmark.type?.rawValue ?? "text"))
+        let section = bookmark.section!
+        let part = bookmark.part!
+        
+        cell.chapterTitleLabel.text = section.title.uppercased()
+        cell.titleLabel.text = part.title
+        cell.bodyLabel.text = part.content
+        cell.chapterNumberLabel.text = section.chapterNumber
+        cell.badgeImageView.image = UIImage(named: "Bookmarks/" + (part.typeName))
 
         return cell
     }
@@ -61,17 +66,18 @@ class BookmarksTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            tableView.beginUpdates()
+            
+            let bookmark = self.bookmarks[indexPath.row]
+            RealmManager.remove(bookmark)
+            
+            tableView.deleteRows(at: [indexPath], with: .top)
+            tableView.endUpdates()
+        }
     }
-    */
 
     /*
     // Override to support rearranging the table view.
